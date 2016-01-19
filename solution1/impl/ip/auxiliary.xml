@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="memory_scanner" xd:componentRef="memory_scanner" xd:initiationInterval="4026531859" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
+  <xd:returnValue xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10"/>
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="m_mm2s_ctl[]" xd:originalName="m_mm2s_ctl" xd:direction="inout" xd:interfaceRef="m_axi_m_mm2s_ctl" xd:busTypeRef="aximm" xd:arraySize="500" xd:dataWidth="32"/>
+  <xd:arg xd:name="m_s2mm_ctl[]" xd:originalName="m_s2mm_ctl" xd:direction="inout" xd:interfaceRef="m_axi_m_s2mm_ctl" xd:busTypeRef="aximm" xd:arraySize="500" xd:dataWidth="32"/>
+  <xd:arg xd:name="s_in" xd:originalName="s_in" xd:direction="in" xd:interfaceRef="s_in_V_V" xd:busTypeRef="axis" xd:arraySize="1000" xd:dataWidth="32"/>
+  <xd:arg xd:name="s_out" xd:originalName="s_out" xd:direction="out" xd:interfaceRef="s_out_V_V" xd:busTypeRef="axis" xd:arraySize="1000" xd:dataWidth="32"/>
+  <xd:arg xd:name="search_string[0]" xd:originalName="search_string0" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[1]" xd:originalName="search_string1" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[2]" xd:originalName="search_string2" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[3]" xd:originalName="search_string3" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[4]" xd:originalName="search_string4" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x38" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[5]" xd:originalName="search_string5" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x40" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[6]" xd:originalName="search_string6" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x48" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[7]" xd:originalName="search_string7" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x50" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[8]" xd:originalName="search_string8" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x58" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[9]" xd:originalName="search_string9" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x60" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[10]" xd:originalName="search_string10" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x68" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[11]" xd:originalName="search_string11" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x70" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[12]" xd:originalName="search_string12" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x78" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[13]" xd:originalName="search_string13" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x80" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[14]" xd:originalName="search_string14" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x88" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[15]" xd:originalName="search_string15" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x90" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="search_string[16]" xd:originalName="search_string16" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x98" xd:handshakeRef="ap_hs" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(count_out)" xd:originalName="count_out" xd:direction="out" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0xA0" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="4026531858" xd:worst-case="4026531858" xd:average-case="4026531858"/>
+  <xd:resourceEstimates xd:LUT="635" xd:FF="345" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,146 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="overflow_adjust" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="quantization_adjust" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ap_fixed_base" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ap_fixed_base" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="to_double" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="to_float" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="reverse32" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="memory_scanner" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memory_scanner" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="search_string"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memory_scanner" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="search_string"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memory_scanner" label="">
+<pragma name="INTERFACE">
+<option name="ap_hs" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="search_string"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memory_scanner" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="count_out"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memory_scanner" label="">
+<pragma name="INTERFACE">
+<option name="ap_vld" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="count_out"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memory_scanner" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_hs" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memory_scanner" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="depth" value="1000"/>
+<option name="port" positionalBoolean="4" value="s_out"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memory_scanner" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="depth" value="1000"/>
+<option name="port" positionalBoolean="4" value="s_in"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memory_scanner" label="">
+<pragma name="INTERFACE">
+<option name="m_axi" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="m_s2mm_ctl"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="memory_scanner" label="">
+<pragma name="INTERFACE">
+<option name="m_axi" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="m_mm2s_ctl"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>
