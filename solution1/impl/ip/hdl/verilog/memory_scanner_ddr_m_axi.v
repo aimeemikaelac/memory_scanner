@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module memory_scanner_m_mm2s_ctl_m_axi
+module memory_scanner_ddr_m_axi
 #(parameter
     C_ID_WIDTH        = 1,
     C_ADDR_WIDTH      = 32,
@@ -134,8 +134,8 @@ assign I_RID = 1'b0;
 assign I_RLAST = 1'b0;
 assign I_RUSER = C_USER_VALUE;
 //------------------------Instantiation------------------
-// memory_scanner_m_mm2s_ctl_m_axi_write
-memory_scanner_m_mm2s_ctl_m_axi_write #(
+// memory_scanner_ddr_m_axi_write
+memory_scanner_ddr_m_axi_write #(
     .C_ID_WIDTH        ( C_ID_WIDTH ),
     .C_ADDR_WIDTH      ( C_ADDR_WIDTH ),
     .C_TARGET_ADDR     ( C_TARGET_ADDR ),
@@ -195,8 +195,8 @@ memory_scanner_m_mm2s_ctl_m_axi_write #(
     .wrsp              ( I_BRESP )
 );
 
-// memory_scanner_m_mm2s_ctl_m_axi_read
-memory_scanner_m_mm2s_ctl_m_axi_read #(
+// memory_scanner_ddr_m_axi_read
+memory_scanner_ddr_m_axi_read #(
     .C_ID_WIDTH        ( C_ID_WIDTH ),
     .C_ADDR_WIDTH      ( C_ADDR_WIDTH ),
     .C_TARGET_ADDR     ( C_TARGET_ADDR ),
@@ -248,7 +248,7 @@ memory_scanner_m_mm2s_ctl_m_axi_read #(
 
 endmodule
 
-module memory_scanner_m_mm2s_ctl_m_axi_fifo
+module memory_scanner_ddr_m_axi_fifo
 #(parameter
     DATA_BITS  = 8,
     DEPTH      = 16,
@@ -317,7 +317,7 @@ end
 
 endmodule
 
-module memory_scanner_m_mm2s_ctl_m_axi_reg_slice
+module memory_scanner_ddr_m_axi_reg_slice
 #(parameter
     N = 8   // data width
 ) (
@@ -426,7 +426,7 @@ endmodule
 
 `timescale 1ns/1ps
 
-module memory_scanner_m_mm2s_ctl_m_axi_read
+module memory_scanner_ddr_m_axi_read
 #(parameter
     C_ID_WIDTH        = 1,
     C_ADDR_WIDTH      = 32,
@@ -552,8 +552,8 @@ end
 endfunction
 
 //------------------------Instantiation------------------
-// memory_scanner_m_mm2s_ctl_m_axi_read_data_align 
-memory_scanner_m_mm2s_ctl_m_axi_read_data_align #(
+// memory_scanner_ddr_m_axi_read_data_align 
+memory_scanner_ddr_m_axi_read_data_align #(
     .C_DATA_WIDTH       (C_DATA_WIDTH),
     .C_USER_DATA_WIDTH  (USER_DW)
 ) read_data_align (
@@ -578,7 +578,7 @@ memory_scanner_m_mm2s_ctl_m_axi_read_data_align #(
 //                   | rreq_length | rreq_addr |
 assign  tmp_addr     = rreq_pack[USER_AW-1 : 0];
 assign  tmp_length   = rreq_pack[USER_AW+31 : USER_AW];
-memory_scanner_m_mm2s_ctl_m_axi_fifo  #(
+memory_scanner_ddr_m_axi_fifo  #(
     .DATA_BITS  ( USER_AW+32 ),
     .DEPTH      ( USER_MAXREQS ),
     .DEPTH_BITS ( log2(USER_MAXREQS) )
@@ -697,7 +697,7 @@ endmodule
 
 `timescale 1ns/1ps
 
-module memory_scanner_m_mm2s_ctl_m_axi_read_data_align
+module memory_scanner_ddr_m_axi_read_data_align
 #(parameter
     C_DATA_WIDTH      = 32,
     C_USER_DATA_WIDTH = 8
@@ -796,10 +796,10 @@ wire [DATA_BITS-1:0]         request_fifo_q;
 wire [DATA_BITS-1:0]         request_fifo_data;
 
 //------------------------Instantiation------------------
-// memory_scanner_m_mm2s_ctl_m_axi_reg_slice
+// memory_scanner_ddr_m_axi_reg_slice
 assign  tmp_rdata   = rs0_data[C_DATA_WIDTH-1:0];
 assign  tmp_rresp   = rs0_data[C_DATA_WIDTH+1:C_DATA_WIDTH];
-memory_scanner_m_mm2s_ctl_m_axi_reg_slice #(
+memory_scanner_ddr_m_axi_reg_slice #(
     .N       ( BUS_DATA_WIDTH+2 )
 ) rs0 (
     .sclk    ( ACLK ),
@@ -812,8 +812,8 @@ memory_scanner_m_mm2s_ctl_m_axi_reg_slice #(
     .m_ready ( rs0_ready )
 );
 
-// memory_scanner_m_mm2s_ctl_m_axi_fifo
-memory_scanner_m_mm2s_ctl_m_axi_fifo #(
+// memory_scanner_ddr_m_axi_fifo
+memory_scanner_ddr_m_axi_fifo #(
     .DATA_BITS  ( C_USER_DATA_WIDTH+2 ),
     .DEPTH      ( DATA_FIFO_DEPTH ),
     .DEPTH_BITS ( log2(DATA_FIFO_DEPTH) )
@@ -828,8 +828,8 @@ memory_scanner_m_mm2s_ctl_m_axi_fifo #(
     .data       ( fifo_data )
 );
 
-// memory_scanner_m_mm2s_ctl_m_axi_reg_slice
-memory_scanner_m_mm2s_ctl_m_axi_reg_slice #(
+// memory_scanner_ddr_m_axi_reg_slice
+memory_scanner_ddr_m_axi_reg_slice #(
     .N       ( C_USER_DATA_WIDTH+2 )
 ) rs1 (
     .sclk    ( ACLK ),
@@ -842,10 +842,10 @@ memory_scanner_m_mm2s_ctl_m_axi_reg_slice #(
     .m_ready ( USER_rsp_read )
 );
 
-// memory_scanner_m_mm2s_ctl_m_axi_fifo
+// memory_scanner_ddr_m_axi_fifo
 // data bits assign: | 2*PADDING_BITS+31 -- PADDING_BITS+32 | PADDING_BITS+31 -- 32 |   31 -- 0   |
 //                   |              head_tmp                |         tail_tmp      | align_beats |
-memory_scanner_m_mm2s_ctl_m_axi_fifo #(
+memory_scanner_ddr_m_axi_fifo #(
     .DATA_BITS  ( DATA_BITS ),
     .DEPTH      ( MAX_REQUEST ),
     .DEPTH_BITS ( log2(MAX_REQUEST) )
@@ -1043,7 +1043,7 @@ endgenerate
 
 endmodule
 
-module memory_scanner_m_mm2s_ctl_m_axi_write
+module memory_scanner_ddr_m_axi_write
 #(parameter
     C_ID_WIDTH        = 1,
     C_ADDR_WIDTH      = 32,
@@ -1207,7 +1207,7 @@ endfunction
 //                   | wreq_length | wreq_addr |
 assign  tmp_addr     = wreq_pack[USER_AW-1 : 0];
 assign  tmp_length   = wreq_pack[USER_AW+31 : USER_AW];
-memory_scanner_m_mm2s_ctl_m_axi_fifo  #(
+memory_scanner_ddr_m_axi_fifo  #(
     .DATA_BITS  ( USER_AW+32 ),
     .DEPTH      ( USER_MAXREQS ),
     .DEPTH_BITS ( log2(USER_MAXREQS) )
@@ -1222,7 +1222,7 @@ memory_scanner_m_mm2s_ctl_m_axi_fifo  #(
     .data( {wreq_length, wreq_addr} )
 );
 
-memory_scanner_m_mm2s_ctl_m_axi_fifo  #(
+memory_scanner_ddr_m_axi_fifo  #(
     .DATA_BITS  ( LOOP_CNT_WIDTH ),
     .DEPTH      ( USER_MAXREQS ),
     .DEPTH_BITS ( log2(USER_MAXREQS) )
@@ -1237,7 +1237,7 @@ memory_scanner_m_mm2s_ctl_m_axi_fifo  #(
     .data( loop_counter )
 );
 
-memory_scanner_m_mm2s_ctl_m_axi_fifo  #(
+memory_scanner_ddr_m_axi_fifo  #(
     .DATA_BITS  ( 2 ),
     .DEPTH      ( USER_MAXREQS ),
     .DEPTH_BITS ( log2(USER_MAXREQS) )
@@ -1252,7 +1252,7 @@ memory_scanner_m_mm2s_ctl_m_axi_fifo  #(
     .data( bresp_tmp )
 );
 
-memory_scanner_m_mm2s_ctl_m_axi_reg_slice #(
+memory_scanner_ddr_m_axi_reg_slice #(
     .N          ( 2 )   // BRESP width
 ) resp_slice (
     .sclk( ACLK ),

@@ -35,14 +35,14 @@ set SCTraceFileName "mytrace"
 set SCTraceFileFormat "vcd"
 set SCTraceOption "all"
 set TargetInfo "xc7z020:clg484:-1"
-set SourceFiles {sc {} c ../.apc/src/memory_scanner.cpp}
+set SourceFiles {sc {} c ../source/memory_scanner.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {/Xilinx/memory_scanner/solution1/solution1.directive}
-set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
+set TBFiles {verilog ../source/memory_scanner_tb.cpp bc ../source/memory_scanner_tb.cpp vhdl ../source/memory_scanner_tb.cpp sc ../source/memory_scanner_tb.cpp cas ../source/memory_scanner_tb.cpp c {}}
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {bc "" c "" sc "" cas "" vhdl "" verilog ""}
-set TBInstNames {bc "" c "" sc "" cas "" vhdl "" verilog ""}
+set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set PlatformFiles {{DefaultPlatform {xilinx/zynq/zynq xilinx/zynq/zynq_fpv6}}}
 set DefaultPlatform "DefaultPlatform"

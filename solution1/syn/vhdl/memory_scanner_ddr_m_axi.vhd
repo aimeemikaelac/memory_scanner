@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity memory_scanner_m_s2mm_ctl_m_axi is
+entity memory_scanner_ddr_m_axi is
     generic (
         C_ID_WIDTH      : INTEGER := 1;
         C_ADDR_WIDTH    : INTEGER := 32;
@@ -125,10 +125,10 @@ entity memory_scanner_m_s2mm_ctl_m_axi is
         I_RUSER         : out STD_LOGIC_VECTOR(C_RUSER_WIDTH-1 downto 0);
         I_RVALID        : out STD_LOGIC;
         I_RREADY        : in  STD_LOGIC);
-end entity memory_scanner_m_s2mm_ctl_m_axi;
+end entity memory_scanner_ddr_m_axi;
 
-architecture behave of memory_scanner_m_s2mm_ctl_m_axi is
-    component memory_scanner_m_s2mm_ctl_m_axi_write is
+architecture behave of memory_scanner_ddr_m_axi is
+    component memory_scanner_ddr_m_axi_write is
         generic (
             C_ID_WIDTH      : INTEGER := 1;
             C_ADDR_WIDTH    : INTEGER := 32;
@@ -187,9 +187,9 @@ architecture behave of memory_scanner_m_s2mm_ctl_m_axi is
             wrsp_valid      : out STD_LOGIC;
             wrsp_ack        : in  STD_LOGIC;
             wrsp            : out UNSIGNED(1 downto 0));
-    end component memory_scanner_m_s2mm_ctl_m_axi_write;
+    end component memory_scanner_ddr_m_axi_write;
 
-    component memory_scanner_m_s2mm_ctl_m_axi_read is
+    component memory_scanner_ddr_m_axi_read is
         generic (
             C_ID_WIDTH      : INTEGER := 1;
             C_ADDR_WIDTH    : INTEGER := 32;
@@ -238,7 +238,7 @@ architecture behave of memory_scanner_m_s2mm_ctl_m_axi is
             rdata_ack       : in  STD_LOGIC;
             rdata_data      : out UNSIGNED(USER_DW-1 downto 0);
             rrsp            : out UNSIGNED(1 downto 0));
-    end component memory_scanner_m_s2mm_ctl_m_axi_read;
+    end component memory_scanner_ddr_m_axi_read;
 
 begin 
 
@@ -249,7 +249,7 @@ begin
     I_RUSER <= (others => '0');
 
     -- Instantiation
-    bus_write : memory_scanner_m_s2mm_ctl_m_axi_write
+    bus_write : memory_scanner_ddr_m_axi_write
         generic map (
             C_ID_WIDTH     => C_ID_WIDTH,
             C_ADDR_WIDTH   => C_ADDR_WIDTH,
@@ -309,7 +309,7 @@ begin
             wrsp_ack                    => I_BREADY,
             STD_LOGIC_VECTOR(wrsp)      => I_BRESP);
 
-    bus_read : memory_scanner_m_s2mm_ctl_m_axi_read
+    bus_read : memory_scanner_ddr_m_axi_read
         generic map (
             C_ID_WIDTH     => C_ID_WIDTH,
             C_ADDR_WIDTH   => C_ADDR_WIDTH,
@@ -365,7 +365,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity memory_scanner_m_s2mm_ctl_m_axi_fifo is
+entity memory_scanner_ddr_m_axi_fifo is
     generic (
         DATA_BITS   : INTEGER := 8;
         DEPTH       : INTEGER := 16;
@@ -379,9 +379,9 @@ entity memory_scanner_m_s2mm_ctl_m_axi_fifo is
         wrreq       : in  STD_LOGIC;
         q           : out UNSIGNED(DATA_BITS-1 downto 0);
         data        : in  UNSIGNED(DATA_BITS-1 downto 0));
-end entity memory_scanner_m_s2mm_ctl_m_axi_fifo;
+end entity memory_scanner_ddr_m_axi_fifo;
 
-architecture behave of memory_scanner_m_s2mm_ctl_m_axi_fifo is
+architecture behave of memory_scanner_ddr_m_axi_fifo is
     signal push, pop                : STD_LOGIC;
     signal empty_n_tmp, full_n_tmp  : STD_LOGIC;
     signal pout                     : INTEGER range 0 to DEPTH -1;
@@ -452,7 +452,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity memory_scanner_m_s2mm_ctl_m_axi_reg_slice is
+entity memory_scanner_ddr_m_axi_reg_slice is
     generic (
         N    : INTEGER   := 8);
     port (
@@ -464,9 +464,9 @@ entity memory_scanner_m_s2mm_ctl_m_axi_reg_slice is
         m_data  :   out UNSIGNED(N-1 downto 0);
         m_valid :   out STD_LOGIC;
         m_ready :   in  STD_LOGIC);
-end entity memory_scanner_m_s2mm_ctl_m_axi_reg_slice;
+end entity memory_scanner_ddr_m_axi_reg_slice;
  
-architecture behave of memory_scanner_m_s2mm_ctl_m_axi_reg_slice is
+architecture behave of memory_scanner_ddr_m_axi_reg_slice is
     signal state, n_state : UNSIGNED(1 downto 0);
     signal data_p1, data_p2 : UNSIGNED(N-1 downto 0);
     signal load_p1, load_p2, load_p1_from_p2, s_ready_t : STD_LOGIC;
@@ -567,7 +567,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity memory_scanner_m_s2mm_ctl_m_axi_read is
+entity memory_scanner_ddr_m_axi_read is
     generic (
         C_ID_WIDTH      : INTEGER := 1;
         C_ADDR_WIDTH    : INTEGER := 32;
@@ -648,9 +648,9 @@ entity memory_scanner_m_s2mm_ctl_m_axi_read is
         end if;
     end;
 
-end entity memory_scanner_m_s2mm_ctl_m_axi_read;
+end entity memory_scanner_ddr_m_axi_read;
 
-architecture behave of memory_scanner_m_s2mm_ctl_m_axi_read is
+architecture behave of memory_scanner_ddr_m_axi_read is
     type states is (idle_s, prep_s, addr_s, loop_s);
     constant USER_DATA_WIDTH : INTEGER := calc_data_width(USER_DW);
     constant USER_DATA_BYTES : INTEGER := USER_DATA_WIDTH / 8;
@@ -686,7 +686,7 @@ architecture behave of memory_scanner_m_s2mm_ctl_m_axi_read is
     signal   arlen_tmp       : UNSIGNED(8 downto 0);
     signal   boundary_beat   : UNSIGNED(11-BUS_ADDR_ALIGN downto 0);
 
-    component memory_scanner_m_s2mm_ctl_m_axi_fifo is
+    component memory_scanner_ddr_m_axi_fifo is
         generic (
             DATA_BITS   : INTEGER := 8;
             DEPTH       : INTEGER := 16;
@@ -700,9 +700,9 @@ architecture behave of memory_scanner_m_s2mm_ctl_m_axi_read is
             wrreq       : in  STD_LOGIC;
             q           : out UNSIGNED(DATA_BITS-1 downto 0);
             data        : in  UNSIGNED(DATA_BITS-1 downto 0));
-    end component memory_scanner_m_s2mm_ctl_m_axi_fifo;
+    end component memory_scanner_ddr_m_axi_fifo;
 
-    component memory_scanner_m_s2mm_ctl_m_axi_read_data_align is
+    component memory_scanner_ddr_m_axi_read_data_align is
         generic (
             C_DATA_WIDTH        : INTEGER := 32;
             C_USER_DATA_WIDTH   : INTEGER := 8);
@@ -722,11 +722,11 @@ architecture behave of memory_scanner_m_s2mm_ctl_m_axi_read is
             align_beats         : in  UNSIGNED(31 downto 0);
             align_address       : in  UNSIGNED(31 downto 0);
             align_length        : in  UNSIGNED(31 downto 0));
-    end component memory_scanner_m_s2mm_ctl_m_axi_read_data_align;
+    end component memory_scanner_ddr_m_axi_read_data_align;
 
 begin
 
-    read_data_align : memory_scanner_m_s2mm_ctl_m_axi_read_data_align
+    read_data_align : memory_scanner_ddr_m_axi_read_data_align
         generic map (
             C_DATA_WIDTH        =>  C_DATA_WIDTH,
             C_USER_DATA_WIDTH   =>  USER_DW)
@@ -747,7 +747,7 @@ begin
             align_address       =>  align_address,
             align_length        =>  align_length);
             
-    fifo_rreq : memory_scanner_m_s2mm_ctl_m_axi_fifo
+    fifo_rreq : memory_scanner_ddr_m_axi_fifo
         generic map (
             DATA_BITS       =>  USER_AW+32,
             DEPTH           =>  USER_MAXREQS,
@@ -885,7 +885,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity memory_scanner_m_s2mm_ctl_m_axi_read_data_align is
+entity memory_scanner_ddr_m_axi_read_data_align is
     generic (
         C_DATA_WIDTH        : INTEGER := 32;
         C_USER_DATA_WIDTH   : INTEGER := 8);
@@ -955,9 +955,9 @@ entity memory_scanner_m_s2mm_ctl_m_axi_read_data_align is
         end if;
     end function calc_pad_bits;
 
-end entity memory_scanner_m_s2mm_ctl_m_axi_read_data_align;
+end entity memory_scanner_ddr_m_axi_read_data_align;
 
-architecture behave of memory_scanner_m_s2mm_ctl_m_axi_read_data_align is 
+architecture behave of memory_scanner_ddr_m_axi_read_data_align is 
     constant DATA_FIFO_DEPTH        : INTEGER := 32;
     constant USER_DATA_WIDTH        : INTEGER := calc_data_width(C_USER_DATA_WIDTH);
     constant USER_DATA_BYTES        : INTEGER := USER_DATA_WIDTH / 8;
@@ -997,7 +997,7 @@ architecture behave of memory_scanner_m_s2mm_ctl_m_axi_read_data_align is
     signal   data_in_tmp            : UNSIGNED(BUS_DATA_WIDTH+1 downto 0);
     signal   data_out_tmp           : UNSIGNED(C_USER_DATA_WIDTH+1 downto 0);
 
-    component memory_scanner_m_s2mm_ctl_m_axi_fifo is
+    component memory_scanner_ddr_m_axi_fifo is
         generic (
             DATA_BITS   : INTEGER := 8;
             DEPTH       : INTEGER := 16;
@@ -1011,9 +1011,9 @@ architecture behave of memory_scanner_m_s2mm_ctl_m_axi_read_data_align is
             wrreq       : in  STD_LOGIC;             
             q           : out UNSIGNED(DATA_BITS-1 downto 0);
             data        : in  UNSIGNED(DATA_BITS-1 downto 0));
-    end component memory_scanner_m_s2mm_ctl_m_axi_fifo;
+    end component memory_scanner_ddr_m_axi_fifo;
 
-    component memory_scanner_m_s2mm_ctl_m_axi_reg_slice is
+    component memory_scanner_ddr_m_axi_reg_slice is
         generic (
             N    : INTEGER   := 8);
         port (
@@ -1025,11 +1025,11 @@ architecture behave of memory_scanner_m_s2mm_ctl_m_axi_read_data_align is
             m_data  :   out UNSIGNED(N-1 downto 0);
             m_valid :   out STD_LOGIC;
             m_ready :   in  STD_LOGIC);
-    end component memory_scanner_m_s2mm_ctl_m_axi_reg_slice;
+    end component memory_scanner_ddr_m_axi_reg_slice;
 
 begin
     -- Instantiation
-    rs0 : memory_scanner_m_s2mm_ctl_m_axi_reg_slice
+    rs0 : memory_scanner_ddr_m_axi_reg_slice
         generic map (
             N       =>  BUS_DATA_WIDTH+2)
         port map (
@@ -1042,7 +1042,7 @@ begin
             m_valid =>  rs0_valid,
             m_ready =>  rs0_ready);
 
-    rs1 : memory_scanner_m_s2mm_ctl_m_axi_reg_slice
+    rs1 : memory_scanner_ddr_m_axi_reg_slice
         generic map (
             N       =>  C_USER_DATA_WIDTH+2)
         port map (
@@ -1055,7 +1055,7 @@ begin
             m_valid =>  USER_rsp_empty_n,
             m_ready =>  USER_rsp_read); 
 
-    data_fifo : memory_scanner_m_s2mm_ctl_m_axi_fifo
+    data_fifo : memory_scanner_ddr_m_axi_fifo
         generic map (
             DATA_BITS   =>  C_USER_DATA_WIDTH+2,
             DEPTH       =>  DATA_FIFO_DEPTH,
@@ -1070,7 +1070,7 @@ begin
             q           =>  fifo_q,
             data        =>  fifo_data);
 
-    request_fifo : memory_scanner_m_s2mm_ctl_m_axi_fifo
+    request_fifo : memory_scanner_ddr_m_axi_fifo
         generic map (
             DATA_BITS   =>  REQ_DATA_BITS,
             DEPTH       =>  MAX_REQUEST,
@@ -1333,7 +1333,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity memory_scanner_m_s2mm_ctl_m_axi_write is
+entity memory_scanner_ddr_m_axi_write is
     generic (
         C_ID_WIDTH      : INTEGER := 1;
         C_ADDR_WIDTH    : INTEGER := 32;
@@ -1424,9 +1424,9 @@ entity memory_scanner_m_s2mm_ctl_m_axi_write is
         end if;
     end;
 
-end entity memory_scanner_m_s2mm_ctl_m_axi_write;
+end entity memory_scanner_ddr_m_axi_write;
 
-architecture behave of memory_scanner_m_s2mm_ctl_m_axi_write is
+architecture behave of memory_scanner_ddr_m_axi_write is
     constant USER_DATA_WIDTH : INTEGER := calc_data_width(USER_DW);
     constant USER_DATA_BYTES : INTEGER := USER_DATA_WIDTH / 8;
     constant USER_ADDR_ALIGN : INTEGER := log2(USER_DATA_BYTES);
@@ -1489,7 +1489,7 @@ architecture behave of memory_scanner_m_s2mm_ctl_m_axi_write is
     signal wdata_ack_t       : STD_LOGIC;
     signal awlen_tmp         :UNSIGNED(8 downto 0);
 
-    component memory_scanner_m_s2mm_ctl_m_axi_fifo is
+    component memory_scanner_ddr_m_axi_fifo is
         generic (
             DATA_BITS   : INTEGER := 8;
             DEPTH       : INTEGER := 16;
@@ -1503,9 +1503,9 @@ architecture behave of memory_scanner_m_s2mm_ctl_m_axi_write is
             wrreq       : in  STD_LOGIC;
             q           : out UNSIGNED(DATA_BITS-1 downto 0);
             data        : in  UNSIGNED(DATA_BITS-1 downto 0));
-    end component memory_scanner_m_s2mm_ctl_m_axi_fifo;
+    end component memory_scanner_ddr_m_axi_fifo;
 
-    component memory_scanner_m_s2mm_ctl_m_axi_reg_slice is
+    component memory_scanner_ddr_m_axi_reg_slice is
         generic (
             N    : INTEGER   := 8);
         port (
@@ -1517,11 +1517,11 @@ architecture behave of memory_scanner_m_s2mm_ctl_m_axi_write is
             m_data  :   out UNSIGNED(N-1 downto 0);
             m_valid :   out STD_LOGIC;
             m_ready :   in  STD_LOGIC);
-    end component memory_scanner_m_s2mm_ctl_m_axi_reg_slice;
+    end component memory_scanner_ddr_m_axi_reg_slice;
 
 begin
     -- Instantiation
-    fifo_wreq : memory_scanner_m_s2mm_ctl_m_axi_fifo
+    fifo_wreq : memory_scanner_ddr_m_axi_fifo
         generic map (
             DATA_BITS       =>  USER_AW+32,
             DEPTH           =>  USER_MAXREQS,
@@ -1536,7 +1536,7 @@ begin
             q               =>  wreq_pack,
             data            =>  fifo_wreq_data);
 
-    fifo_resp : memory_scanner_m_s2mm_ctl_m_axi_fifo
+    fifo_resp : memory_scanner_ddr_m_axi_fifo
         generic map (
             DATA_BITS       =>  LOOP_CNT_WIDTH,
             DEPTH           =>  USER_MAXREQS,
@@ -1551,7 +1551,7 @@ begin
             q               =>  resp_total,
             data            =>  loop_counter);
 
-    fifo_resp_to_slice : memory_scanner_m_s2mm_ctl_m_axi_fifo
+    fifo_resp_to_slice : memory_scanner_ddr_m_axi_fifo
         generic map (
             DATA_BITS       =>  2,
             DEPTH           =>  USER_MAXREQS,
@@ -1566,7 +1566,7 @@ begin
             q               =>  resp_reg_data,
             data            =>  bresp_tmp);
 
-    resp_slice : memory_scanner_m_s2mm_ctl_m_axi_reg_slice
+    resp_slice : memory_scanner_ddr_m_axi_reg_slice
         generic map (
             N               =>  2)
         port map (

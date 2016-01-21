@@ -207,7 +207,7 @@
 				<spirit:parameter>
 					<spirit:name>ASSOCIATED_BUSIF</spirit:name>
 					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.AP_CLK.ASSOCIATED_BUSIF">s_axi_AXILiteS:m_axi_m_mm2s_ctl:m_axi_m_s2mm_ctl:s_in_V_V:s_out_V_V</spirit:value>
+							spirit:id="BUSIFPARAM_VALUE.AP_CLK.ASSOCIATED_BUSIF">s_axi_AXILiteS:m_axi_ddr</spirit:value>
 				</spirit:parameter>
 				<spirit:parameter>
 					<spirit:name>ASSOCIATED_RESET</spirit:name>
@@ -275,7 +275,7 @@
 			</spirit:parameters>
 		</spirit:busInterface>
 		<spirit:busInterface>
-			<spirit:name>m_axi_m_mm2s_ctl</spirit:name>
+			<spirit:name>m_axi_ddr</spirit:name>
 			<spirit:busType spirit:vendor="xilinx.com"
 					spirit:library="interface"
 					spirit:name="aximm"
@@ -293,7 +293,7 @@
 						<spirit:name>AWID</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWID</spirit:name>
+						<spirit:name>m_axi_ddr_AWID</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -301,7 +301,7 @@
 						<spirit:name>AWADDR</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWADDR</spirit:name>
+						<spirit:name>m_axi_ddr_AWADDR</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -309,7 +309,7 @@
 						<spirit:name>AWLEN</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWLEN</spirit:name>
+						<spirit:name>m_axi_ddr_AWLEN</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -317,7 +317,7 @@
 						<spirit:name>AWSIZE</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWSIZE</spirit:name>
+						<spirit:name>m_axi_ddr_AWSIZE</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -325,7 +325,7 @@
 						<spirit:name>AWBURST</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWBURST</spirit:name>
+						<spirit:name>m_axi_ddr_AWBURST</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -333,7 +333,7 @@
 						<spirit:name>AWLOCK</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWLOCK</spirit:name>
+						<spirit:name>m_axi_ddr_AWLOCK</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -341,7 +341,7 @@
 						<spirit:name>AWREGION</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWREGION</spirit:name>
+						<spirit:name>m_axi_ddr_AWREGION</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -349,7 +349,7 @@
 						<spirit:name>AWCACHE</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWCACHE</spirit:name>
+						<spirit:name>m_axi_ddr_AWCACHE</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -357,7 +357,7 @@
 						<spirit:name>AWPROT</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWPROT</spirit:name>
+						<spirit:name>m_axi_ddr_AWPROT</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -365,7 +365,7 @@
 						<spirit:name>AWQOS</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWQOS</spirit:name>
+						<spirit:name>m_axi_ddr_AWQOS</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -373,7 +373,7 @@
 						<spirit:name>AWUSER</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWUSER</spirit:name>
+						<spirit:name>m_axi_ddr_AWUSER</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -381,7 +381,7 @@
 						<spirit:name>AWVALID</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWVALID</spirit:name>
+						<spirit:name>m_axi_ddr_AWVALID</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -389,7 +389,7 @@
 						<spirit:name>AWREADY</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_AWREADY</spirit:name>
+						<spirit:name>m_axi_ddr_AWREADY</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -397,7 +397,7 @@
 						<spirit:name>WID</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_WID</spirit:name>
+						<spirit:name>m_axi_ddr_WID</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -405,7 +405,7 @@
 						<spirit:name>WDATA</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_WDATA</spirit:name>
+						<spirit:name>m_axi_ddr_WDATA</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -413,7 +413,7 @@
 						<spirit:name>WSTRB</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_WSTRB</spirit:name>
+						<spirit:name>m_axi_ddr_WSTRB</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -421,7 +421,7 @@
 						<spirit:name>WLAST</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_WLAST</spirit:name>
+						<spirit:name>m_axi_ddr_WLAST</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -429,7 +429,7 @@
 						<spirit:name>WUSER</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_WUSER</spirit:name>
+						<spirit:name>m_axi_ddr_WUSER</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -437,7 +437,7 @@
 						<spirit:name>WVALID</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_WVALID</spirit:name>
+						<spirit:name>m_axi_ddr_WVALID</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -445,7 +445,7 @@
 						<spirit:name>WREADY</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_WREADY</spirit:name>
+						<spirit:name>m_axi_ddr_WREADY</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -453,7 +453,7 @@
 						<spirit:name>BID</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_BID</spirit:name>
+						<spirit:name>m_axi_ddr_BID</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -461,7 +461,7 @@
 						<spirit:name>BRESP</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_BRESP</spirit:name>
+						<spirit:name>m_axi_ddr_BRESP</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -469,7 +469,7 @@
 						<spirit:name>BUSER</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_BUSER</spirit:name>
+						<spirit:name>m_axi_ddr_BUSER</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -477,7 +477,7 @@
 						<spirit:name>BVALID</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_BVALID</spirit:name>
+						<spirit:name>m_axi_ddr_BVALID</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -485,7 +485,7 @@
 						<spirit:name>BREADY</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_BREADY</spirit:name>
+						<spirit:name>m_axi_ddr_BREADY</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -493,7 +493,7 @@
 						<spirit:name>ARID</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARID</spirit:name>
+						<spirit:name>m_axi_ddr_ARID</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -501,7 +501,7 @@
 						<spirit:name>ARADDR</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARADDR</spirit:name>
+						<spirit:name>m_axi_ddr_ARADDR</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -509,7 +509,7 @@
 						<spirit:name>ARLEN</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARLEN</spirit:name>
+						<spirit:name>m_axi_ddr_ARLEN</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -517,7 +517,7 @@
 						<spirit:name>ARSIZE</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARSIZE</spirit:name>
+						<spirit:name>m_axi_ddr_ARSIZE</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -525,7 +525,7 @@
 						<spirit:name>ARBURST</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARBURST</spirit:name>
+						<spirit:name>m_axi_ddr_ARBURST</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -533,7 +533,7 @@
 						<spirit:name>ARLOCK</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARLOCK</spirit:name>
+						<spirit:name>m_axi_ddr_ARLOCK</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -541,7 +541,7 @@
 						<spirit:name>ARREGION</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARREGION</spirit:name>
+						<spirit:name>m_axi_ddr_ARREGION</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -549,7 +549,7 @@
 						<spirit:name>ARCACHE</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARCACHE</spirit:name>
+						<spirit:name>m_axi_ddr_ARCACHE</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -557,7 +557,7 @@
 						<spirit:name>ARPROT</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARPROT</spirit:name>
+						<spirit:name>m_axi_ddr_ARPROT</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -565,7 +565,7 @@
 						<spirit:name>ARQOS</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARQOS</spirit:name>
+						<spirit:name>m_axi_ddr_ARQOS</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -573,7 +573,7 @@
 						<spirit:name>ARUSER</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARUSER</spirit:name>
+						<spirit:name>m_axi_ddr_ARUSER</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -581,7 +581,7 @@
 						<spirit:name>ARVALID</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARVALID</spirit:name>
+						<spirit:name>m_axi_ddr_ARVALID</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -589,7 +589,7 @@
 						<spirit:name>ARREADY</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_ARREADY</spirit:name>
+						<spirit:name>m_axi_ddr_ARREADY</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -597,7 +597,7 @@
 						<spirit:name>RID</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_RID</spirit:name>
+						<spirit:name>m_axi_ddr_RID</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -605,7 +605,7 @@
 						<spirit:name>RDATA</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_RDATA</spirit:name>
+						<spirit:name>m_axi_ddr_RDATA</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -613,7 +613,7 @@
 						<spirit:name>RRESP</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_RRESP</spirit:name>
+						<spirit:name>m_axi_ddr_RRESP</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -621,7 +621,7 @@
 						<spirit:name>RLAST</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_RLAST</spirit:name>
+						<spirit:name>m_axi_ddr_RLAST</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -629,7 +629,7 @@
 						<spirit:name>RUSER</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_RUSER</spirit:name>
+						<spirit:name>m_axi_ddr_RUSER</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -637,7 +637,7 @@
 						<spirit:name>RVALID</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_RVALID</spirit:name>
+						<spirit:name>m_axi_ddr_RVALID</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
@@ -645,7 +645,7 @@
 						<spirit:name>RREADY</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>m_axi_m_mm2s_ctl_RREADY</spirit:name>
+						<spirit:name>m_axi_ddr_RREADY</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 			</spirit:portMaps>
@@ -654,573 +654,37 @@
 				<spirit:parameter>
 					<spirit:name>ADDR_WIDTH</spirit:name>
 					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_MM2S_CTL.ADDR_WIDTH">32</spirit:value>
+							spirit:id="BUSIFPARAM_VALUE.M_AXI_DDR.ADDR_WIDTH">32</spirit:value>
 				</spirit:parameter>
 				<spirit:parameter>
 					<spirit:name>MAX_BURST_LENGTH</spirit:name>
 					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_MM2S_CTL.MAX_BURST_LENGTH">256</spirit:value>
+							spirit:id="BUSIFPARAM_VALUE.M_AXI_DDR.MAX_BURST_LENGTH">256</spirit:value>
 				</spirit:parameter>
 				<spirit:parameter>
 					<spirit:name>NUM_READ_OUTSTANDING</spirit:name>
 					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_MM2S_CTL.NUM_READ_OUTSTANDING">1</spirit:value>
+							spirit:id="BUSIFPARAM_VALUE.M_AXI_DDR.NUM_READ_OUTSTANDING">1</spirit:value>
 				</spirit:parameter>
 				<spirit:parameter>
 					<spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
 					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_MM2S_CTL.NUM_WRITE_OUTSTANDING">1</spirit:value>
+							spirit:id="BUSIFPARAM_VALUE.M_AXI_DDR.NUM_WRITE_OUTSTANDING">1</spirit:value>
 				</spirit:parameter>
 				<spirit:parameter>
 					<spirit:name>PROTOCOL</spirit:name>
 					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_MM2S_CTL.PROTOCOL">AXI4</spirit:value>
+							spirit:id="BUSIFPARAM_VALUE.M_AXI_DDR.PROTOCOL">AXI4</spirit:value>
 				</spirit:parameter>
 				<spirit:parameter>
 					<spirit:name>READ_WRITE_MODE</spirit:name>
 					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_MM2S_CTL.READ_WRITE_MODE">READ_WRITE</spirit:value>
+							spirit:id="BUSIFPARAM_VALUE.M_AXI_DDR.READ_WRITE_MODE">READ_WRITE</spirit:value>
 				</spirit:parameter>
 				<spirit:parameter>
 					<spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
 					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_MM2S_CTL.SUPPORTS_NARROW_BURST">0</spirit:value>
-				</spirit:parameter>
-			</spirit:parameters>
-		</spirit:busInterface>
-		<spirit:busInterface>
-			<spirit:name>m_axi_m_s2mm_ctl</spirit:name>
-			<spirit:busType spirit:vendor="xilinx.com"
-					spirit:library="interface"
-					spirit:name="aximm"
-					spirit:version="1.0"/>
-			<spirit:abstractionType spirit:vendor="xilinx.com"
-					spirit:library="interface"
-					spirit:name="aximm_rtl"
-					spirit:version="1.0"/>
-			<spirit:master>
-				<spirit:addressSpaceRef spirit:addressSpaceRef="Data"/>
-			</spirit:master>
-			<spirit:portMaps>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWID</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWID</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWADDR</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWADDR</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWLEN</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWLEN</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWSIZE</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWSIZE</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWBURST</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWBURST</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWLOCK</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWLOCK</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWREGION</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWREGION</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWCACHE</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWCACHE</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWPROT</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWPROT</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWQOS</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWQOS</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWUSER</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWUSER</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWVALID</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWVALID</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>AWREADY</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_AWREADY</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>WID</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_WID</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>WDATA</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_WDATA</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>WSTRB</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_WSTRB</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>WLAST</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_WLAST</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>WUSER</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_WUSER</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>WVALID</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_WVALID</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>WREADY</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_WREADY</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>BID</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_BID</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>BRESP</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_BRESP</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>BUSER</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_BUSER</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>BVALID</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_BVALID</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>BREADY</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_BREADY</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARID</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARID</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARADDR</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARADDR</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARLEN</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARLEN</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARSIZE</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARSIZE</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARBURST</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARBURST</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARLOCK</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARLOCK</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARREGION</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARREGION</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARCACHE</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARCACHE</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARPROT</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARPROT</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARQOS</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARQOS</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARUSER</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARUSER</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARVALID</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARVALID</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>ARREADY</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_ARREADY</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>RID</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_RID</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>RDATA</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_RDATA</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>RRESP</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_RRESP</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>RLAST</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_RLAST</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>RUSER</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_RUSER</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>RVALID</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_RVALID</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>RREADY</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>m_axi_m_s2mm_ctl_RREADY</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-			</spirit:portMaps>
-			<spirit:endianness>little</spirit:endianness>
-			<spirit:parameters>
-				<spirit:parameter>
-					<spirit:name>ADDR_WIDTH</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_S2MM_CTL.ADDR_WIDTH">32</spirit:value>
-				</spirit:parameter>
-				<spirit:parameter>
-					<spirit:name>MAX_BURST_LENGTH</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_S2MM_CTL.MAX_BURST_LENGTH">256</spirit:value>
-				</spirit:parameter>
-				<spirit:parameter>
-					<spirit:name>NUM_READ_OUTSTANDING</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_S2MM_CTL.NUM_READ_OUTSTANDING">1</spirit:value>
-				</spirit:parameter>
-				<spirit:parameter>
-					<spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_S2MM_CTL.NUM_WRITE_OUTSTANDING">1</spirit:value>
-				</spirit:parameter>
-				<spirit:parameter>
-					<spirit:name>PROTOCOL</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_S2MM_CTL.PROTOCOL">AXI4</spirit:value>
-				</spirit:parameter>
-				<spirit:parameter>
-					<spirit:name>READ_WRITE_MODE</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_S2MM_CTL.READ_WRITE_MODE">READ_WRITE</spirit:value>
-				</spirit:parameter>
-				<spirit:parameter>
-					<spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.M_AXI_M_S2MM_CTL.SUPPORTS_NARROW_BURST">0</spirit:value>
-				</spirit:parameter>
-			</spirit:parameters>
-		</spirit:busInterface>
-		<spirit:busInterface>
-			<spirit:name>s_in_V_V</spirit:name>
-			<spirit:busType spirit:vendor="xilinx.com"
-					spirit:library="interface"
-					spirit:name="axis"
-					spirit:version="1.0"/>
-			<spirit:abstractionType spirit:vendor="xilinx.com"
-					spirit:library="interface"
-					spirit:name="axis_rtl"
-					spirit:version="1.0"/>
-			<spirit:slave/>
-			<spirit:portMaps>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>TVALID</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>s_in_V_V_TVALID</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>TREADY</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>s_in_V_V_TREADY</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>TDATA</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>s_in_V_V_TDATA</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-			</spirit:portMaps>
-			<spirit:endianness>little</spirit:endianness>
-			<spirit:parameters>
-				<spirit:parameter>
-					<spirit:name>SIGNAL_SET</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.S_IN_V_V.SIGNAL_SET">00000011</spirit:value>
-				</spirit:parameter>
-				<spirit:parameter>
-					<spirit:name>TDATA_NUM_BYTES</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.S_IN_V_V.TDATA_NUM_BYTES">4</spirit:value>
-				</spirit:parameter>
-				<spirit:parameter>
-					<spirit:name>TUSER_WIDTH</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.S_IN_V_V.TUSER_WIDTH">0</spirit:value>
-				</spirit:parameter>
-				<spirit:parameter>
-					<spirit:name>LAYERED_METADATA</spirit:name>
-					<spirit:value spirit:resolve="generated"
-							spirit:id="BUSIFPARAM_VALUE.S_IN_V_V.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}</spirit:value>
-				</spirit:parameter>
-			</spirit:parameters>
-		</spirit:busInterface>
-		<spirit:busInterface>
-			<spirit:name>s_out_V_V</spirit:name>
-			<spirit:busType spirit:vendor="xilinx.com"
-					spirit:library="interface"
-					spirit:name="axis"
-					spirit:version="1.0"/>
-			<spirit:abstractionType spirit:vendor="xilinx.com"
-					spirit:library="interface"
-					spirit:name="axis_rtl"
-					spirit:version="1.0"/>
-			<spirit:master/>
-			<spirit:portMaps>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>TVALID</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>s_out_V_V_TVALID</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>TREADY</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>s_out_V_V_TREADY</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>TDATA</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>s_out_V_V_TDATA</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-			</spirit:portMaps>
-			<spirit:endianness>little</spirit:endianness>
-			<spirit:parameters>
-				<spirit:parameter>
-					<spirit:name>SIGNAL_SET</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.S_OUT_V_V.SIGNAL_SET">00000011</spirit:value>
-				</spirit:parameter>
-				<spirit:parameter>
-					<spirit:name>TDATA_NUM_BYTES</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.S_OUT_V_V.TDATA_NUM_BYTES">4</spirit:value>
-				</spirit:parameter>
-				<spirit:parameter>
-					<spirit:name>TUSER_WIDTH</spirit:name>
-					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.S_OUT_V_V.TUSER_WIDTH">0</spirit:value>
-				</spirit:parameter>
-				<spirit:parameter>
-					<spirit:name>LAYERED_METADATA</spirit:name>
-					<spirit:value spirit:resolve="generated"
-							spirit:id="BUSIFPARAM_VALUE.S_OUT_V_V.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}</spirit:value>
+							spirit:id="BUSIFPARAM_VALUE.M_AXI_DDR.SUPPORTS_NARROW_BURST">0</spirit:value>
 				</spirit:parameter>
 			</spirit:parameters>
 		</spirit:busInterface>
@@ -1321,14 +785,6 @@
 				<spirit:envIdentifier>:vivado.xilinx.com:misc.files</spirit:envIdentifier>
 				<spirit:fileSetRef>
 					<spirit:localName>xilinx_miscfiles_view_fileset</spirit:localName>
-				</spirit:fileSetRef>
-			</spirit:view>
-			<spirit:view>
-				<spirit:name>xilinx_block_diagram</spirit:name>
-				<spirit:displayName>Block Diagram</spirit:displayName>
-				<spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
-				<spirit:fileSetRef>
-					<spirit:localName>xilinx_block_diagram_view_fileset</spirit:localName>
 				</spirit:fileSetRef>
 			</spirit:view>
 			<spirit:view>
@@ -1643,12 +1099,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWID</spirit:name>
+				<spirit:name>m_axi_ddr_AWID</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_ID_WIDTH&apos;)) - 1)">0</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_ID_WIDTH&apos;)) - 1)">0</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -1661,12 +1117,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWADDR</spirit:name>
+				<spirit:name>m_axi_ddr_AWADDR</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -1679,7 +1135,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWLEN</spirit:name>
+				<spirit:name>m_axi_ddr_AWLEN</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -1696,7 +1152,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWSIZE</spirit:name>
+				<spirit:name>m_axi_ddr_AWSIZE</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -1713,7 +1169,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWBURST</spirit:name>
+				<spirit:name>m_axi_ddr_AWBURST</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -1730,7 +1186,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWLOCK</spirit:name>
+				<spirit:name>m_axi_ddr_AWLOCK</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -1747,7 +1203,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWREGION</spirit:name>
+				<spirit:name>m_axi_ddr_AWREGION</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -1764,7 +1220,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWCACHE</spirit:name>
+				<spirit:name>m_axi_ddr_AWCACHE</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -1781,7 +1237,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWPROT</spirit:name>
+				<spirit:name>m_axi_ddr_AWPROT</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -1798,7 +1254,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWQOS</spirit:name>
+				<spirit:name>m_axi_ddr_AWQOS</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -1815,12 +1271,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWUSER</spirit:name>
+				<spirit:name>m_axi_ddr_AWUSER</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_AWUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_AWUSER_WIDTH&apos;)) - 1)">0</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -1833,7 +1289,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWVALID</spirit:name>
+				<spirit:name>m_axi_ddr_AWVALID</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -1846,7 +1302,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_AWREADY</spirit:name>
+				<spirit:name>m_axi_ddr_AWREADY</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -1859,12 +1315,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_WID</spirit:name>
+				<spirit:name>m_axi_ddr_WID</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_ID_WIDTH&apos;)) - 1)">0</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_ID_WIDTH&apos;)) - 1)">0</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -1877,12 +1333,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_WDATA</spirit:name>
+				<spirit:name>m_axi_ddr_WDATA</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -1895,12 +1351,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_WSTRB</spirit:name>
+				<spirit:name>m_axi_ddr_WSTRB</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_DATA_WIDTH&apos;)) div 8) - 1)">3</spirit:left>
+								spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_DATA_WIDTH&apos;)) div 8) - 1)">3</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -1913,7 +1369,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_WLAST</spirit:name>
+				<spirit:name>m_axi_ddr_WLAST</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -1926,12 +1382,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_WUSER</spirit:name>
+				<spirit:name>m_axi_ddr_WUSER</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_WUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_WUSER_WIDTH&apos;)) - 1)">0</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -1944,7 +1400,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_WVALID</spirit:name>
+				<spirit:name>m_axi_ddr_WVALID</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -1957,7 +1413,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_WREADY</spirit:name>
+				<spirit:name>m_axi_ddr_WREADY</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -1970,12 +1426,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_BID</spirit:name>
+				<spirit:name>m_axi_ddr_BID</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_ID_WIDTH&apos;)) - 1)">0</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_ID_WIDTH&apos;)) - 1)">0</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -1988,7 +1444,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_BRESP</spirit:name>
+				<spirit:name>m_axi_ddr_BRESP</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:vector>
@@ -2005,12 +1461,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_BUSER</spirit:name>
+				<spirit:name>m_axi_ddr_BUSER</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_BUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_BUSER_WIDTH&apos;)) - 1)">0</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -2023,7 +1479,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_BVALID</spirit:name>
+				<spirit:name>m_axi_ddr_BVALID</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -2036,7 +1492,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_BREADY</spirit:name>
+				<spirit:name>m_axi_ddr_BREADY</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -2049,12 +1505,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARID</spirit:name>
+				<spirit:name>m_axi_ddr_ARID</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_ID_WIDTH&apos;)) - 1)">0</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_ID_WIDTH&apos;)) - 1)">0</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -2067,12 +1523,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARADDR</spirit:name>
+				<spirit:name>m_axi_ddr_ARADDR</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -2085,7 +1541,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARLEN</spirit:name>
+				<spirit:name>m_axi_ddr_ARLEN</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -2102,7 +1558,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARSIZE</spirit:name>
+				<spirit:name>m_axi_ddr_ARSIZE</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -2119,7 +1575,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARBURST</spirit:name>
+				<spirit:name>m_axi_ddr_ARBURST</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -2136,7 +1592,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARLOCK</spirit:name>
+				<spirit:name>m_axi_ddr_ARLOCK</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -2153,7 +1609,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARREGION</spirit:name>
+				<spirit:name>m_axi_ddr_ARREGION</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -2170,7 +1626,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARCACHE</spirit:name>
+				<spirit:name>m_axi_ddr_ARCACHE</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -2187,7 +1643,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARPROT</spirit:name>
+				<spirit:name>m_axi_ddr_ARPROT</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -2204,7 +1660,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARQOS</spirit:name>
+				<spirit:name>m_axi_ddr_ARQOS</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -2221,12 +1677,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARUSER</spirit:name>
+				<spirit:name>m_axi_ddr_ARUSER</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_ARUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_ARUSER_WIDTH&apos;)) - 1)">0</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -2239,7 +1695,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARVALID</spirit:name>
+				<spirit:name>m_axi_ddr_ARVALID</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -2252,7 +1708,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_ARREADY</spirit:name>
+				<spirit:name>m_axi_ddr_ARREADY</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -2265,12 +1721,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_RID</spirit:name>
+				<spirit:name>m_axi_ddr_RID</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_ID_WIDTH&apos;)) - 1)">0</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_ID_WIDTH&apos;)) - 1)">0</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -2283,12 +1739,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_RDATA</spirit:name>
+				<spirit:name>m_axi_ddr_RDATA</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -2301,7 +1757,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_RRESP</spirit:name>
+				<spirit:name>m_axi_ddr_RRESP</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:vector>
@@ -2318,7 +1774,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_RLAST</spirit:name>
+				<spirit:name>m_axi_ddr_RLAST</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -2331,383 +1787,12 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_RUSER</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_RUSER_WIDTH&apos;)) - 1)">0</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_RVALID</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_mm2s_ctl_RREADY</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWID</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_ID_WIDTH&apos;)) - 1)">0</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWADDR</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWLEN</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>7</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWSIZE</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>2</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWBURST</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>1</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWLOCK</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>1</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWREGION</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>3</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWCACHE</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>3</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWPROT</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>2</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWQOS</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>3</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWUSER</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_AWUSER_WIDTH&apos;)) - 1)">0</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWVALID</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_AWREADY</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_WID</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_ID_WIDTH&apos;)) - 1)">0</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_WDATA</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_WSTRB</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_DATA_WIDTH&apos;)) div 8) - 1)">3</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_WLAST</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_WUSER</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_WUSER_WIDTH&apos;)) - 1)">0</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_WVALID</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_WREADY</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_BID</spirit:name>
+				<spirit:name>m_axi_ddr_RUSER</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_ID_WIDTH&apos;)) - 1)">0</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_DDR_RUSER_WIDTH&apos;)) - 1)">0</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -2720,42 +1805,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_BRESP</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:vector>
-						<spirit:left>1</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_BUSER</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_BUSER_WIDTH&apos;)) - 1)">0</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_BVALID</spirit:name>
+				<spirit:name>m_axi_ddr_RVALID</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -2768,7 +1818,7 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_BREADY</spirit:name>
+				<spirit:name>m_axi_ddr_RREADY</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -2779,428 +1829,6 @@
 						</spirit:wireTypeDef>
 					</spirit:wireTypeDefs>
 				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARID</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_ID_WIDTH&apos;)) - 1)">0</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARADDR</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARLEN</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>7</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARSIZE</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>2</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARBURST</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>1</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARLOCK</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>1</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARREGION</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>3</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARCACHE</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>3</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARPROT</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>2</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARQOS</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>3</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARUSER</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_ARUSER_WIDTH&apos;)) - 1)">0</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARVALID</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_ARREADY</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_RID</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_ID_WIDTH&apos;)) - 1)">0</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_RDATA</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_RRESP</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:vector>
-						<spirit:left>1</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_RLAST</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_RUSER</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:vector>
-						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_RUSER_WIDTH&apos;)) - 1)">0</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_RVALID</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>m_axi_m_s2mm_ctl_RREADY</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>s_in_V_V_TVALID</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>s_in_V_V_TREADY</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>s_in_V_V_TDATA</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:vector>
-						<spirit:left>31</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-				<spirit:vendorExtensions>
-					<xilinx:portInfo>
-						<xilinx:endianness>little</xilinx:endianness>
-					</xilinx:portInfo>
-				</spirit:vendorExtensions>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>s_out_V_V_TVALID</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>s_out_V_V_TREADY</spirit:name>
-				<spirit:wire>
-					<spirit:direction>in</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>s_out_V_V_TDATA</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:vector>
-						<spirit:left>31</spirit:left>
-						<spirit:right>0</spirit:right>
-					</spirit:vector>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic_vector</spirit:typeName>
-							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-				<spirit:vendorExtensions>
-					<xilinx:portInfo>
-						<xilinx:endianness>little</xilinx:endianness>
-					</xilinx:portInfo>
-				</spirit:vendorExtensions>
 			</spirit:port>
 		</spirit:ports>
 		<spirit:modelParameters>
@@ -3218,155 +1846,79 @@
 						spirit:id="MODELPARAM_VALUE.C_S_AXI_AXILITES_DATA_WIDTH">32</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_MM2S_CTL_ID_WIDTH</spirit:name>
+				<spirit:name>C_M_AXI_DDR_ID_WIDTH</spirit:name>
 				<spirit:value spirit:format="long"
 						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_ID_WIDTH">1</spirit:value>
+						spirit:id="MODELPARAM_VALUE.C_M_AXI_DDR_ID_WIDTH">1</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_MM2S_CTL_ADDR_WIDTH</spirit:name>
+				<spirit:name>C_M_AXI_DDR_ADDR_WIDTH</spirit:name>
 				<spirit:value spirit:format="long"
 						spirit:resolve="immediate"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_ADDR_WIDTH">32</spirit:value>
+						spirit:id="MODELPARAM_VALUE.C_M_AXI_DDR_ADDR_WIDTH">32</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_MM2S_CTL_DATA_WIDTH</spirit:name>
+				<spirit:name>C_M_AXI_DDR_DATA_WIDTH</spirit:name>
 				<spirit:value spirit:format="long"
 						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_DATA_WIDTH">32</spirit:value>
+						spirit:id="MODELPARAM_VALUE.C_M_AXI_DDR_DATA_WIDTH">32</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_MM2S_CTL_AWUSER_WIDTH</spirit:name>
+				<spirit:name>C_M_AXI_DDR_AWUSER_WIDTH</spirit:name>
 				<spirit:value spirit:format="long"
 						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_AWUSER_WIDTH">1</spirit:value>
+						spirit:id="MODELPARAM_VALUE.C_M_AXI_DDR_AWUSER_WIDTH">1</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_MM2S_CTL_ARUSER_WIDTH</spirit:name>
+				<spirit:name>C_M_AXI_DDR_ARUSER_WIDTH</spirit:name>
 				<spirit:value spirit:format="long"
 						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_ARUSER_WIDTH">1</spirit:value>
+						spirit:id="MODELPARAM_VALUE.C_M_AXI_DDR_ARUSER_WIDTH">1</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_MM2S_CTL_WUSER_WIDTH</spirit:name>
+				<spirit:name>C_M_AXI_DDR_WUSER_WIDTH</spirit:name>
 				<spirit:value spirit:format="long"
 						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_WUSER_WIDTH">1</spirit:value>
+						spirit:id="MODELPARAM_VALUE.C_M_AXI_DDR_WUSER_WIDTH">1</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_MM2S_CTL_RUSER_WIDTH</spirit:name>
+				<spirit:name>C_M_AXI_DDR_RUSER_WIDTH</spirit:name>
 				<spirit:value spirit:format="long"
 						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_RUSER_WIDTH">1</spirit:value>
+						spirit:id="MODELPARAM_VALUE.C_M_AXI_DDR_RUSER_WIDTH">1</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_MM2S_CTL_BUSER_WIDTH</spirit:name>
+				<spirit:name>C_M_AXI_DDR_BUSER_WIDTH</spirit:name>
 				<spirit:value spirit:format="long"
 						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_BUSER_WIDTH">1</spirit:value>
+						spirit:id="MODELPARAM_VALUE.C_M_AXI_DDR_BUSER_WIDTH">1</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="std_logic_vector">
-				<spirit:name>C_M_AXI_M_MM2S_CTL_USER_VALUE</spirit:name>
+				<spirit:name>C_M_AXI_DDR_USER_VALUE</spirit:name>
 				<spirit:value spirit:format="bitString"
 						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_USER_VALUE"
+						spirit:id="MODELPARAM_VALUE.C_M_AXI_DDR_USER_VALUE"
 						spirit:bitStringLength="32">0x00000000</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="std_logic_vector">
-				<spirit:name>C_M_AXI_M_MM2S_CTL_PROT_VALUE</spirit:name>
+				<spirit:name>C_M_AXI_DDR_PROT_VALUE</spirit:name>
 				<spirit:value spirit:format="bitString"
 						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_PROT_VALUE"
+						spirit:id="MODELPARAM_VALUE.C_M_AXI_DDR_PROT_VALUE"
 						spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="std_logic_vector">
-				<spirit:name>C_M_AXI_M_MM2S_CTL_CACHE_VALUE</spirit:name>
+				<spirit:name>C_M_AXI_DDR_CACHE_VALUE</spirit:name>
 				<spirit:value spirit:format="bitString"
 						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_CACHE_VALUE"
+						spirit:id="MODELPARAM_VALUE.C_M_AXI_DDR_CACHE_VALUE"
 						spirit:bitStringLength="4">&quot;0011&quot;</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="std_logic_vector">
-				<spirit:name>C_M_AXI_M_MM2S_CTL_TARGET_ADDR</spirit:name>
+				<spirit:name>C_M_AXI_DDR_TARGET_ADDR</spirit:name>
 				<spirit:value spirit:format="bitString"
 						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_MM2S_CTL_TARGET_ADDR"
-						spirit:bitStringLength="32">0x00000000</spirit:value>
-			</spirit:modelParameter>
-			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_S2MM_CTL_ID_WIDTH</spirit:name>
-				<spirit:value spirit:format="long"
-						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_ID_WIDTH">1</spirit:value>
-			</spirit:modelParameter>
-			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_S2MM_CTL_ADDR_WIDTH</spirit:name>
-				<spirit:value spirit:format="long"
-						spirit:resolve="immediate"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_ADDR_WIDTH">32</spirit:value>
-			</spirit:modelParameter>
-			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_S2MM_CTL_DATA_WIDTH</spirit:name>
-				<spirit:value spirit:format="long"
-						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_DATA_WIDTH">32</spirit:value>
-			</spirit:modelParameter>
-			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_S2MM_CTL_AWUSER_WIDTH</spirit:name>
-				<spirit:value spirit:format="long"
-						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_AWUSER_WIDTH">1</spirit:value>
-			</spirit:modelParameter>
-			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_S2MM_CTL_ARUSER_WIDTH</spirit:name>
-				<spirit:value spirit:format="long"
-						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_ARUSER_WIDTH">1</spirit:value>
-			</spirit:modelParameter>
-			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_S2MM_CTL_WUSER_WIDTH</spirit:name>
-				<spirit:value spirit:format="long"
-						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_WUSER_WIDTH">1</spirit:value>
-			</spirit:modelParameter>
-			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_S2MM_CTL_RUSER_WIDTH</spirit:name>
-				<spirit:value spirit:format="long"
-						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_RUSER_WIDTH">1</spirit:value>
-			</spirit:modelParameter>
-			<spirit:modelParameter spirit:dataType="integer">
-				<spirit:name>C_M_AXI_M_S2MM_CTL_BUSER_WIDTH</spirit:name>
-				<spirit:value spirit:format="long"
-						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_BUSER_WIDTH">1</spirit:value>
-			</spirit:modelParameter>
-			<spirit:modelParameter spirit:dataType="std_logic_vector">
-				<spirit:name>C_M_AXI_M_S2MM_CTL_USER_VALUE</spirit:name>
-				<spirit:value spirit:format="bitString"
-						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_USER_VALUE"
-						spirit:bitStringLength="32">0x00000000</spirit:value>
-			</spirit:modelParameter>
-			<spirit:modelParameter spirit:dataType="std_logic_vector">
-				<spirit:name>C_M_AXI_M_S2MM_CTL_PROT_VALUE</spirit:name>
-				<spirit:value spirit:format="bitString"
-						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_PROT_VALUE"
-						spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
-			</spirit:modelParameter>
-			<spirit:modelParameter spirit:dataType="std_logic_vector">
-				<spirit:name>C_M_AXI_M_S2MM_CTL_CACHE_VALUE</spirit:name>
-				<spirit:value spirit:format="bitString"
-						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_CACHE_VALUE"
-						spirit:bitStringLength="4">&quot;0011&quot;</spirit:value>
-			</spirit:modelParameter>
-			<spirit:modelParameter spirit:dataType="std_logic_vector">
-				<spirit:name>C_M_AXI_M_S2MM_CTL_TARGET_ADDR</spirit:name>
-				<spirit:value spirit:format="bitString"
-						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_M_AXI_M_S2MM_CTL_TARGET_ADDR"
+						spirit:id="MODELPARAM_VALUE.C_M_AXI_DDR_TARGET_ADDR"
 						spirit:bitStringLength="32">0x00000000</spirit:value>
 			</spirit:modelParameter>
 		</spirit:modelParameters>
@@ -3374,15 +1926,6 @@
 	<spirit:choices>
 		<spirit:choice>
 			<spirit:name>choices_0</spirit:name>
-			<spirit:enumeration spirit:text="32">32</spirit:enumeration>
-			<spirit:enumeration spirit:text="64">64</spirit:enumeration>
-			<spirit:enumeration spirit:text="128">128</spirit:enumeration>
-			<spirit:enumeration spirit:text="256">256</spirit:enumeration>
-			<spirit:enumeration spirit:text="512">512</spirit:enumeration>
-			<spirit:enumeration spirit:text="1024">1024</spirit:enumeration>
-		</spirit:choice>
-		<spirit:choice>
-			<spirit:name>choices_1</spirit:name>
 			<spirit:enumeration spirit:text="32">32</spirit:enumeration>
 			<spirit:enumeration spirit:text="64">64</spirit:enumeration>
 			<spirit:enumeration spirit:text="128">128</spirit:enumeration>
@@ -3402,11 +1945,7 @@
 				<spirit:userFileType>USED_IN_implementation</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/memory_scanner_m_mm2s_ctl_m_axi.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/memory_scanner_m_s2mm_ctl_m_axi.v</spirit:name>
+				<spirit:name>hdl/verilog/memory_scanner_ddr_m_axi.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3421,11 +1960,7 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
 			<spirit:file>
-				<spirit:name>hdl/verilog/memory_scanner_m_mm2s_ctl_m_axi.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/memory_scanner_m_s2mm_ctl_m_axi.v</spirit:name>
+				<spirit:name>hdl/verilog/memory_scanner_ddr_m_axi.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3451,17 +1986,13 @@
 				<spirit:fileType>vhdlSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/vhdl/memory_scanner_m_mm2s_ctl_m_axi.vhd</spirit:name>
+				<spirit:name>hdl/vhdl/memory_scanner_ddr_m_axi.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
 				<spirit:name>hdl/vhdl/memory_scanner.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/vhdl/memory_scanner_m_s2mm_ctl_m_axi.vhd</spirit:name>
-				<spirit:fileType>vhdlSource</spirit:fileType>
-				<spirit:userFileType>CHECKSUM_1fca62e6</spirit:userFileType>
+				<spirit:userFileType>CHECKSUM_5ee6aea8</spirit:userFileType>
 			</spirit:file>
 		</spirit:fileSet>
 		<spirit:fileSet>
@@ -3471,15 +2002,11 @@
 				<spirit:fileType>vhdlSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/vhdl/memory_scanner_m_mm2s_ctl_m_axi.vhd</spirit:name>
+				<spirit:name>hdl/vhdl/memory_scanner_ddr_m_axi.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
 				<spirit:name>hdl/vhdl/memory_scanner.vhd</spirit:name>
-				<spirit:fileType>vhdlSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/vhdl/memory_scanner_m_s2mm_ctl_m_axi.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 			</spirit:file>
 		</spirit:fileSet>
@@ -3533,19 +2060,12 @@
 			</spirit:file>
 		</spirit:fileSet>
 		<spirit:fileSet>
-			<spirit:name>xilinx_block_diagram_view_fileset</spirit:name>
-			<spirit:file>
-				<spirit:name>bd/bd.tcl</spirit:name>
-				<spirit:fileType>tclSource</spirit:fileType>
-			</spirit:file>
-		</spirit:fileSet>
-		<spirit:fileSet>
 			<spirit:name>xilinx_xpgui_view_fileset</spirit:name>
 			<spirit:file>
 				<spirit:name>xgui/memory_scanner_v1_0.tcl</spirit:name>
 				<spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
 				<spirit:fileType>tclSource</spirit:fileType>
-				<spirit:userFileType>CHECKSUM_8380deac</spirit:userFileType>
+				<spirit:userFileType>CHECKSUM_f7ac7d53</spirit:userFileType>
 			</spirit:file>
 		</spirit:fileSet>
 		<spirit:fileSet>
@@ -3571,235 +2091,119 @@
 					spirit:maximum="32">8</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_MM2S_CTL_ID_WIDTH</spirit:name>
+			<spirit:name>C_M_AXI_DDR_ID_WIDTH</spirit:name>
 			<spirit:displayName>ID width</spirit:displayName>
 			<spirit:value spirit:format="long"
 					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_MM2S_CTL_ID_WIDTH"
+					spirit:id="PARAM_VALUE.C_M_AXI_DDR_ID_WIDTH"
 					spirit:order="3"
-					spirit:configGroups="1 m_axi_m_mm2s_ctl_(AXI4_Master_Interface)"
+					spirit:configGroups="1 m_axi_ddr_(AXI4_Master_Interface)"
 					spirit:minimum="1"
 					spirit:maximum="32">1</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_MM2S_CTL_DATA_WIDTH</spirit:name>
+			<spirit:name>C_M_AXI_DDR_DATA_WIDTH</spirit:name>
 			<spirit:displayName>Data width</spirit:displayName>
 			<spirit:value spirit:format="long"
 					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_MM2S_CTL_DATA_WIDTH"
+					spirit:id="PARAM_VALUE.C_M_AXI_DDR_DATA_WIDTH"
 					spirit:choiceRef="choices_0"
 					spirit:order="4"
-					spirit:configGroups="1 m_axi_m_mm2s_ctl_(AXI4_Master_Interface)">32</spirit:value>
+					spirit:configGroups="1 m_axi_ddr_(AXI4_Master_Interface)">32</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_MM2S_CTL_AWUSER_WIDTH</spirit:name>
+			<spirit:name>C_M_AXI_DDR_AWUSER_WIDTH</spirit:name>
 			<spirit:displayName>AWUSER width</spirit:displayName>
 			<spirit:value spirit:format="long"
 					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_MM2S_CTL_AWUSER_WIDTH"
+					spirit:id="PARAM_VALUE.C_M_AXI_DDR_AWUSER_WIDTH"
 					spirit:order="5"
-					spirit:configGroups="1 m_axi_m_mm2s_ctl_(AXI4_Master_Interface)"
+					spirit:configGroups="1 m_axi_ddr_(AXI4_Master_Interface)"
 					spirit:minimum="1"
 					spirit:maximum="1024">1</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_MM2S_CTL_WUSER_WIDTH</spirit:name>
+			<spirit:name>C_M_AXI_DDR_WUSER_WIDTH</spirit:name>
 			<spirit:displayName>WUSER width</spirit:displayName>
 			<spirit:value spirit:format="long"
 					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_MM2S_CTL_WUSER_WIDTH"
+					spirit:id="PARAM_VALUE.C_M_AXI_DDR_WUSER_WIDTH"
 					spirit:order="6"
-					spirit:configGroups="1 m_axi_m_mm2s_ctl_(AXI4_Master_Interface)"
+					spirit:configGroups="1 m_axi_ddr_(AXI4_Master_Interface)"
 					spirit:minimum="1"
 					spirit:maximum="1024">1</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_MM2S_CTL_BUSER_WIDTH</spirit:name>
+			<spirit:name>C_M_AXI_DDR_BUSER_WIDTH</spirit:name>
 			<spirit:displayName>BUSER width</spirit:displayName>
 			<spirit:value spirit:format="long"
 					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_MM2S_CTL_BUSER_WIDTH"
+					spirit:id="PARAM_VALUE.C_M_AXI_DDR_BUSER_WIDTH"
 					spirit:order="7"
-					spirit:configGroups="1 m_axi_m_mm2s_ctl_(AXI4_Master_Interface)"
+					spirit:configGroups="1 m_axi_ddr_(AXI4_Master_Interface)"
 					spirit:minimum="1"
 					spirit:maximum="1024">1</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_MM2S_CTL_ARUSER_WIDTH</spirit:name>
+			<spirit:name>C_M_AXI_DDR_ARUSER_WIDTH</spirit:name>
 			<spirit:displayName>ARUSER width</spirit:displayName>
 			<spirit:value spirit:format="long"
 					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_MM2S_CTL_ARUSER_WIDTH"
+					spirit:id="PARAM_VALUE.C_M_AXI_DDR_ARUSER_WIDTH"
 					spirit:order="8"
-					spirit:configGroups="1 m_axi_m_mm2s_ctl_(AXI4_Master_Interface)"
+					spirit:configGroups="1 m_axi_ddr_(AXI4_Master_Interface)"
 					spirit:minimum="1"
 					spirit:maximum="1024">1</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_MM2S_CTL_RUSER_WIDTH</spirit:name>
+			<spirit:name>C_M_AXI_DDR_RUSER_WIDTH</spirit:name>
 			<spirit:displayName>RUSER width</spirit:displayName>
 			<spirit:value spirit:format="long"
 					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_MM2S_CTL_RUSER_WIDTH"
+					spirit:id="PARAM_VALUE.C_M_AXI_DDR_RUSER_WIDTH"
 					spirit:order="9"
-					spirit:configGroups="1 m_axi_m_mm2s_ctl_(AXI4_Master_Interface)"
+					spirit:configGroups="1 m_axi_ddr_(AXI4_Master_Interface)"
 					spirit:minimum="1"
 					spirit:maximum="1024">1</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_MM2S_CTL_USER_VALUE</spirit:name>
+			<spirit:name>C_M_AXI_DDR_USER_VALUE</spirit:name>
 			<spirit:displayName>USER value</spirit:displayName>
 			<spirit:value spirit:format="bitString"
 					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_MM2S_CTL_USER_VALUE"
+					spirit:id="PARAM_VALUE.C_M_AXI_DDR_USER_VALUE"
 					spirit:order="10"
-					spirit:configGroups="1 m_axi_m_mm2s_ctl_(AXI4_Master_Interface)"
+					spirit:configGroups="1 m_axi_ddr_(AXI4_Master_Interface)"
 					spirit:bitStringLength="32">0x00000000</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_MM2S_CTL_PROT_VALUE</spirit:name>
+			<spirit:name>C_M_AXI_DDR_PROT_VALUE</spirit:name>
 			<spirit:displayName>PROT value</spirit:displayName>
 			<spirit:value spirit:format="bitString"
 					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_MM2S_CTL_PROT_VALUE"
+					spirit:id="PARAM_VALUE.C_M_AXI_DDR_PROT_VALUE"
 					spirit:order="11"
-					spirit:configGroups="1 m_axi_m_mm2s_ctl_(AXI4_Master_Interface)"
+					spirit:configGroups="1 m_axi_ddr_(AXI4_Master_Interface)"
 					spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_MM2S_CTL_CACHE_VALUE</spirit:name>
+			<spirit:name>C_M_AXI_DDR_CACHE_VALUE</spirit:name>
 			<spirit:displayName>CACHE value</spirit:displayName>
 			<spirit:value spirit:format="bitString"
 					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_MM2S_CTL_CACHE_VALUE"
+					spirit:id="PARAM_VALUE.C_M_AXI_DDR_CACHE_VALUE"
 					spirit:order="12"
-					spirit:configGroups="1 m_axi_m_mm2s_ctl_(AXI4_Master_Interface)"
+					spirit:configGroups="1 m_axi_ddr_(AXI4_Master_Interface)"
 					spirit:bitStringLength="4">&quot;0011&quot;</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_MM2S_CTL_TARGET_ADDR</spirit:name>
+			<spirit:name>C_M_AXI_DDR_TARGET_ADDR</spirit:name>
 			<spirit:displayName>Base address of target slave</spirit:displayName>
 			<spirit:value spirit:format="bitString"
 					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_MM2S_CTL_TARGET_ADDR"
+					spirit:id="PARAM_VALUE.C_M_AXI_DDR_TARGET_ADDR"
 					spirit:order="13"
-					spirit:configGroups="1 m_axi_m_mm2s_ctl_(AXI4_Master_Interface)"
-					spirit:bitStringLength="32">0x00000000</spirit:value>
-		</spirit:parameter>
-		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_S2MM_CTL_ID_WIDTH</spirit:name>
-			<spirit:displayName>ID width</spirit:displayName>
-			<spirit:value spirit:format="long"
-					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_S2MM_CTL_ID_WIDTH"
-					spirit:order="14"
-					spirit:configGroups="1 m_axi_m_s2mm_ctl_(AXI4_Master_Interface)"
-					spirit:minimum="1"
-					spirit:maximum="32">1</spirit:value>
-		</spirit:parameter>
-		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_S2MM_CTL_DATA_WIDTH</spirit:name>
-			<spirit:displayName>Data width</spirit:displayName>
-			<spirit:value spirit:format="long"
-					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_S2MM_CTL_DATA_WIDTH"
-					spirit:choiceRef="choices_1"
-					spirit:order="15"
-					spirit:configGroups="1 m_axi_m_s2mm_ctl_(AXI4_Master_Interface)">32</spirit:value>
-		</spirit:parameter>
-		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_S2MM_CTL_AWUSER_WIDTH</spirit:name>
-			<spirit:displayName>AWUSER width</spirit:displayName>
-			<spirit:value spirit:format="long"
-					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_S2MM_CTL_AWUSER_WIDTH"
-					spirit:order="16"
-					spirit:configGroups="1 m_axi_m_s2mm_ctl_(AXI4_Master_Interface)"
-					spirit:minimum="1"
-					spirit:maximum="1024">1</spirit:value>
-		</spirit:parameter>
-		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_S2MM_CTL_WUSER_WIDTH</spirit:name>
-			<spirit:displayName>WUSER width</spirit:displayName>
-			<spirit:value spirit:format="long"
-					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_S2MM_CTL_WUSER_WIDTH"
-					spirit:order="17"
-					spirit:configGroups="1 m_axi_m_s2mm_ctl_(AXI4_Master_Interface)"
-					spirit:minimum="1"
-					spirit:maximum="1024">1</spirit:value>
-		</spirit:parameter>
-		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_S2MM_CTL_BUSER_WIDTH</spirit:name>
-			<spirit:displayName>BUSER width</spirit:displayName>
-			<spirit:value spirit:format="long"
-					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_S2MM_CTL_BUSER_WIDTH"
-					spirit:order="18"
-					spirit:configGroups="1 m_axi_m_s2mm_ctl_(AXI4_Master_Interface)"
-					spirit:minimum="1"
-					spirit:maximum="1024">1</spirit:value>
-		</spirit:parameter>
-		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_S2MM_CTL_ARUSER_WIDTH</spirit:name>
-			<spirit:displayName>ARUSER width</spirit:displayName>
-			<spirit:value spirit:format="long"
-					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_S2MM_CTL_ARUSER_WIDTH"
-					spirit:order="19"
-					spirit:configGroups="1 m_axi_m_s2mm_ctl_(AXI4_Master_Interface)"
-					spirit:minimum="1"
-					spirit:maximum="1024">1</spirit:value>
-		</spirit:parameter>
-		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_S2MM_CTL_RUSER_WIDTH</spirit:name>
-			<spirit:displayName>RUSER width</spirit:displayName>
-			<spirit:value spirit:format="long"
-					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_S2MM_CTL_RUSER_WIDTH"
-					spirit:order="20"
-					spirit:configGroups="1 m_axi_m_s2mm_ctl_(AXI4_Master_Interface)"
-					spirit:minimum="1"
-					spirit:maximum="1024">1</spirit:value>
-		</spirit:parameter>
-		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_S2MM_CTL_USER_VALUE</spirit:name>
-			<spirit:displayName>USER value</spirit:displayName>
-			<spirit:value spirit:format="bitString"
-					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_S2MM_CTL_USER_VALUE"
-					spirit:order="21"
-					spirit:configGroups="1 m_axi_m_s2mm_ctl_(AXI4_Master_Interface)"
-					spirit:bitStringLength="32">0x00000000</spirit:value>
-		</spirit:parameter>
-		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_S2MM_CTL_PROT_VALUE</spirit:name>
-			<spirit:displayName>PROT value</spirit:displayName>
-			<spirit:value spirit:format="bitString"
-					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_S2MM_CTL_PROT_VALUE"
-					spirit:order="22"
-					spirit:configGroups="1 m_axi_m_s2mm_ctl_(AXI4_Master_Interface)"
-					spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
-		</spirit:parameter>
-		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_S2MM_CTL_CACHE_VALUE</spirit:name>
-			<spirit:displayName>CACHE value</spirit:displayName>
-			<spirit:value spirit:format="bitString"
-					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_S2MM_CTL_CACHE_VALUE"
-					spirit:order="23"
-					spirit:configGroups="1 m_axi_m_s2mm_ctl_(AXI4_Master_Interface)"
-					spirit:bitStringLength="4">&quot;0011&quot;</spirit:value>
-		</spirit:parameter>
-		<spirit:parameter>
-			<spirit:name>C_M_AXI_M_S2MM_CTL_TARGET_ADDR</spirit:name>
-			<spirit:displayName>Base address of target slave</spirit:displayName>
-			<spirit:value spirit:format="bitString"
-					spirit:resolve="user"
-					spirit:id="PARAM_VALUE.C_M_AXI_M_S2MM_CTL_TARGET_ADDR"
-					spirit:order="24"
-					spirit:configGroups="1 m_axi_m_s2mm_ctl_(AXI4_Master_Interface)"
+					spirit:configGroups="1 m_axi_ddr_(AXI4_Master_Interface)"
 					spirit:bitStringLength="32">0x00000000</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -3818,8 +2222,8 @@
 				<xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Memory_scanner</xilinx:displayName>
-			<xilinx:coreRevision>1601190441</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2016-01-19T11:41:32Z</xilinx:coreCreationDateTime>
+			<xilinx:coreRevision>1601201547</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2016-01-20T22:47:31Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2014.1</xilinx:xilinxVersion>

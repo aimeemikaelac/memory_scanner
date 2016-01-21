@@ -1,40 +1,10 @@
 <InterfaceSummary>
 <RtlPorts>
-<name>m_mm2s_ctl</name>
+<name>ddr</name>
 <CType>
-<TypeName>unsigned int</TypeName>
-<TypeWidth>32</TypeWidth>
-<PhysicalWidth>32</PhysicalWidth>
-</CType>
-<CFractionWidth>0</CFractionWidth>
-<InvalidType>0</InvalidType>
-</RtlPorts>
-<RtlPorts>
-<name>m_s2mm_ctl</name>
-<CType>
-<TypeName>unsigned int</TypeName>
-<TypeWidth>32</TypeWidth>
-<PhysicalWidth>32</PhysicalWidth>
-</CType>
-<CFractionWidth>0</CFractionWidth>
-<InvalidType>0</InvalidType>
-</RtlPorts>
-<RtlPorts>
-<name>s_in_V_V</name>
-<CType>
-<TypeName>ap_uint 32</TypeName>
-<TypeWidth>32</TypeWidth>
-<PhysicalWidth>32</PhysicalWidth>
-</CType>
-<CFractionWidth>0</CFractionWidth>
-<InvalidType>0</InvalidType>
-</RtlPorts>
-<RtlPorts>
-<name>s_out_V_V</name>
-<CType>
-<TypeName>ap_uint 32</TypeName>
-<TypeWidth>32</TypeWidth>
-<PhysicalWidth>32</PhysicalWidth>
+<TypeName>unsigned char</TypeName>
+<TypeWidth>8</TypeWidth>
+<PhysicalWidth>8</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>

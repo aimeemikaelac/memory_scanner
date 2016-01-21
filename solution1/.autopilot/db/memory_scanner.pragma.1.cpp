@@ -1,6 +1,5 @@
-class aesl_keep_name_class;
-#1 "memory_scanner/.apc/src/memory_scanner.cpp"
-#1 "memory_scanner/.apc/src/memory_scanner.cpp" 1
+#1 "memory_scanner/source/memory_scanner.cpp"
+#1 "memory_scanner/source/memory_scanner.cpp" 1
 #1 "<built-in>" 1
 #1 "<built-in>" 3
 #155 "<built-in>" 3
@@ -162,7 +161,7 @@ extern "C" {
 #define _ssdm_op_Delayed(X) X */
 #8 "<command line>" 2
 #1 "<built-in>" 2
-#1 "memory_scanner/.apc/src/memory_scanner.cpp" 2
+#1 "memory_scanner/source/memory_scanner.cpp" 2
 #1 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_int.h" 1
 // -*- c++ -*-
 /*
@@ -37792,9 +37791,6 @@ struct ap_uint: ap_int_base<_AP_W, false> {
          Base::V = op2.V;
          return *this;
      }
-
-friend class ::aesl_keep_name_class;
-#234 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_int.h"
 };
 
 
@@ -38040,7 +38036,7 @@ struct ap_ufixed: ap_fixed_base<_AP_W, _AP_I, false, _AP_Q, _AP_O, _AP_N> {
     }
 
 };
-#2 "memory_scanner/.apc/src/memory_scanner.cpp" 2
+#2 "memory_scanner/source/memory_scanner.cpp" 2
 //#include <ap_cint.h>
 
 #1 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/hls_stream.h" 1
@@ -38239,13 +38235,1152 @@ class stream
 
   private:
     __STREAM_T__ V;
-
-friend class ::aesl_keep_name_class;
-#112 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/hls_stream.h"
 };
 
 } // namespace hls
-#4 "memory_scanner/.apc/src/memory_scanner.cpp" 2
+#4 "memory_scanner/source/memory_scanner.cpp" 2
+#1 "/usr/include/stdio.h" 1 3 4
+/* Define ISO C stdio on top of C++ iostreams.
+   Copyright (C) 1991-2014 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+
+/*
+ *	ISO C99 Standard: 7.19 Input/output	<stdio.h>
+ */
+
+
+
+
+
+
+
+extern "C" {
+
+
+
+
+#1 "/Xilinx/Vivado_HLS/2014.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+/*===---- stddef.h - Basic type definitions --------------------------------===
+ *
+ * Copyright (c) 2008 Eli Friedman
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ *===-----------------------------------------------------------------------===
+ */
+#56 "/Xilinx/Vivado_HLS/2014.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
+/* Some C libraries expect to see a wint_t here. Others (notably MinGW) will use
+__WINT_TYPE__ directly; accommodate both by requiring __need_wint_t */
+#34 "/usr/include/stdio.h" 2 3 4
+#74 "/usr/include/stdio.h" 3 4
+#1 "/usr/include/libio.h" 1 3 4
+/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+   Written by Per Bothner <bothner@cygnus.com>.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.
+
+   As a special exception, if you link the code in this file with
+   files compiled with a GNU compiler to produce an executable,
+   that does not cause the resulting executable to be covered by
+   the GNU Lesser General Public License.  This exception does not
+   however invalidate any other reasons why the executable file
+   might be covered by the GNU Lesser General Public License.
+   This exception applies to code released by its copyright holders
+   in files containing the exception.  */
+
+
+
+
+
+#1 "/usr/include/_G_config.h" 1 3 4
+/* This file is needed by libio to define various configuration parameters.
+   These are always the same in the GNU C library.  */
+
+
+
+
+/* Define types for libio in terms of the standard internal type names.  */
+
+
+
+
+
+
+
+
+#1 "/Xilinx/Vivado_HLS/2014.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+/*===---- stddef.h - Basic type definitions --------------------------------===
+ *
+ * Copyright (c) 2008 Eli Friedman
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ *===-----------------------------------------------------------------------===
+ */
+#56 "/Xilinx/Vivado_HLS/2014.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
+/* Some C libraries expect to see a wint_t here. Others (notably MinGW) will use
+__WINT_TYPE__ directly; accommodate both by requiring __need_wint_t */
+#16 "/usr/include/_G_config.h" 2 3 4
+
+
+
+
+#1 "/usr/include/wchar.h" 1 3 4
+/* Copyright (C) 1995-2014 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+
+/*
+ *      ISO C99 Standard: 7.24
+ *	Extended multibyte and wide character utilities	<wchar.h>
+ */
+#897 "/usr/include/wchar.h" 3 4
+/* Undefine all __need_* constants in case we are included to get those
+   constants but the whole file was already read.  */
+#21 "/usr/include/_G_config.h" 2 3 4
+typedef struct
+{
+  __off_t __pos;
+  __mbstate_t __state;
+} _G_fpos_t;
+typedef struct
+{
+  __off64_t __pos;
+  __mbstate_t __state;
+} _G_fpos64_t;
+#45 "/usr/include/_G_config.h" 3 4
+/* These library features are always available in the GNU C library.  */
+
+
+
+
+
+
+
+/* This is defined by <bits/stat.h> if `st_blksize' exists.  */
+#32 "/usr/include/libio.h" 2 3 4
+/* ALL of these should be defined in _G_config.h */
+#47 "/usr/include/libio.h" 3 4
+/* This define avoids name pollution if we're using GNU stdarg.h */
+#86 "/usr/include/libio.h" 3 4
+/* Magic numbers and bits for the _flags field.
+   The magic numbers use the high-order bits of _flags;
+   the remaining bits are available for variable flags.
+   Note: The magic numbers must all be negative if stdio
+   emulation is desired. */
+#124 "/usr/include/libio.h" 3 4
+/* These are "formatting flags" matching the iostream fmtflags enum values. */
+#144 "/usr/include/libio.h" 3 4
+struct _IO_jump_t; struct _IO_FILE;
+
+/* Handle lock.  */
+
+
+
+
+
+
+
+typedef void _IO_lock_t;
+
+
+
+/* A streammarker remembers a position in a buffer. */
+
+struct _IO_marker {
+  struct _IO_marker *_next;
+  struct _IO_FILE *_sbuf;
+  /* If _pos >= 0
+ it points to _buf->Gbase()+_pos. FIXME comment */
+  /* if _pos < 0, it points to _buf->eBptr()+_pos. FIXME comment */
+  int _pos;
+#177 "/usr/include/libio.h" 3 4
+};
+
+/* This is the structure from the libstdc++ codecvt class.  */
+enum __codecvt_result
+{
+  __codecvt_ok,
+  __codecvt_partial,
+  __codecvt_error,
+  __codecvt_noconv
+};
+#245 "/usr/include/libio.h" 3 4
+struct _IO_FILE {
+  int _flags; /* High-order word is _IO_MAGIC; rest is flags. */
+
+
+  /* The following pointers correspond to the C++ streambuf protocol. */
+  /* Note:  Tk uses the _IO_read_ptr and _IO_read_end fields directly. */
+  char* _IO_read_ptr; /* Current read pointer */
+  char* _IO_read_end; /* End of get area. */
+  char* _IO_read_base; /* Start of putback+get area. */
+  char* _IO_write_base; /* Start of put area. */
+  char* _IO_write_ptr; /* Current put pointer. */
+  char* _IO_write_end; /* End of put area. */
+  char* _IO_buf_base; /* Start of reserve area. */
+  char* _IO_buf_end; /* End of reserve area. */
+  /* The following fields are used to support backing up and undo. */
+  char *_IO_save_base; /* Pointer to start of non-current get area. */
+  char *_IO_backup_base; /* Pointer to first valid character of backup area */
+  char *_IO_save_end; /* Pointer to end of non-current get area. */
+
+  struct _IO_marker *_markers;
+
+  struct _IO_FILE *_chain;
+
+  int _fileno;
+
+
+
+  int _flags2;
+
+  __off_t _old_offset; /* This used to be _offset but it's too small.  */
+
+
+  /* 1+column number of pbase(); 0 is unknown. */
+  unsigned short _cur_column;
+  signed char _vtable_offset;
+  char _shortbuf[1];
+
+  /*  char* _save_gptr;  char* _save_egptr; */
+
+  _IO_lock_t *_lock;
+#293 "/usr/include/libio.h" 3 4
+  __off64_t _offset;
+#302 "/usr/include/libio.h" 3 4
+  void *__pad1;
+  void *__pad2;
+  void *__pad3;
+  void *__pad4;
+  size_t __pad5;
+
+  int _mode;
+  /* Make sure we don't get into trouble again.  */
+  char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+
+};
+
+
+
+
+
+struct _IO_FILE_plus;
+
+extern struct _IO_FILE_plus _IO_2_1_stdin_;
+extern struct _IO_FILE_plus _IO_2_1_stdout_;
+extern struct _IO_FILE_plus _IO_2_1_stderr_;
+#334 "/usr/include/libio.h" 3 4
+/* Functions to do I/O and file management for a stream.  */
+
+/* Read NBYTES bytes from COOKIE into a buffer pointed to by BUF.
+   Return number of bytes read.  */
+typedef __ssize_t __io_read_fn (void *__cookie, char *__buf, size_t __nbytes);
+
+/* Write N bytes pointed to by BUF to COOKIE.  Write all N bytes
+   unless there is an error.  Return number of bytes written.  If
+   there is an error, return 0 and do not write anything.  If the file
+   has been opened for append (__mode.__append set), then set the file
+   pointer to the end of the file and then do the write; if not, just
+   write at the current file pointer.  */
+typedef __ssize_t __io_write_fn (void *__cookie, const char *__buf,
+     size_t __n);
+
+/* Move COOKIE's file position to *POS bytes from the
+   beginning of the file (if W is SEEK_SET),
+   the current position (if W is SEEK_CUR),
+   or the end of the file (if W is SEEK_END).
+   Set *POS to the new file position.
+   Returns zero if successful, nonzero if not.  */
+typedef int __io_seek_fn (void *__cookie, __off64_t *__pos, int __w);
+
+/* Close COOKIE.  */
+typedef int __io_close_fn (void *__cookie);
+
+
+
+/* User-visible names for the above.  */
+typedef __io_read_fn cookie_read_function_t;
+typedef __io_write_fn cookie_write_function_t;
+typedef __io_seek_fn cookie_seek_function_t;
+typedef __io_close_fn cookie_close_function_t;
+
+/* The structure with the cookie function pointers.  */
+typedef struct
+{
+  __io_read_fn *read; /* Read bytes.  */
+  __io_write_fn *write; /* Write bytes.  */
+  __io_seek_fn *seek; /* Seek/tell file position.  */
+  __io_close_fn *close; /* Close file.  */
+} _IO_cookie_io_functions_t;
+typedef _IO_cookie_io_functions_t cookie_io_functions_t;
+
+struct _IO_cookie_file;
+
+/* Initialize one of those.  */
+extern void _IO_cookie_init (struct _IO_cookie_file *__cfile, int __read_write,
+        void *__cookie, _IO_cookie_io_functions_t __fns);
+
+
+
+
+extern "C" {
+
+
+extern int __underflow (_IO_FILE *);
+extern int __uflow (_IO_FILE *);
+extern int __overflow (_IO_FILE *, int);
+#434 "/usr/include/libio.h" 3 4
+extern int _IO_getc (_IO_FILE *__fp);
+extern int _IO_putc (int __c, _IO_FILE *__fp);
+extern int _IO_feof (_IO_FILE *__fp) throw ();
+extern int _IO_ferror (_IO_FILE *__fp) throw ();
+
+extern int _IO_peekc_locked (_IO_FILE *__fp);
+
+/* This one is for Emacs. */
+
+
+
+extern void _IO_flockfile (_IO_FILE *) throw ();
+extern void _IO_funlockfile (_IO_FILE *) throw ();
+extern int _IO_ftrylockfile (_IO_FILE *) throw ();
+#464 "/usr/include/libio.h" 3 4
+extern int _IO_vfscanf (_IO_FILE * __restrict, const char * __restrict,
+   __gnuc_va_list, int *__restrict);
+extern int _IO_vfprintf (_IO_FILE *__restrict, const char *__restrict,
+    __gnuc_va_list);
+extern __ssize_t _IO_padn (_IO_FILE *, int, __ssize_t);
+extern size_t _IO_sgetn (_IO_FILE *, void *, size_t);
+
+extern __off64_t _IO_seekoff (_IO_FILE *, __off64_t, int, int);
+extern __off64_t _IO_seekpos (_IO_FILE *, __off64_t, int);
+
+extern void _IO_free_backup_area (_IO_FILE *) throw ();
+#526 "/usr/include/libio.h" 3 4
+}
+#75 "/usr/include/stdio.h" 2 3 4
+
+
+
+
+typedef __gnuc_va_list va_list;
+#107 "/usr/include/stdio.h" 3 4
+/* The type of the second argument to `fgetpos' and `fsetpos'.  */
+
+
+typedef _G_fpos_t fpos_t;
+
+
+
+
+
+typedef _G_fpos64_t fpos64_t;
+
+
+/* The possibilities for the third argument to `setvbuf'.  */
+
+
+
+
+
+/* Default buffer size.  */
+
+
+
+
+
+/* End of file character.
+   Some things throughout the library rely on this being -1.  */
+
+
+
+
+
+/* The possibilities for the third argument to `fseek'.
+   These values should not be changed.  */
+#150 "/usr/include/stdio.h" 3 4
+/* Default path prefix for `tempnam' and `tmpnam'.  */
+
+
+
+
+/* Get the values:
+   L_tmpnam	How long an array of chars must be to be passed to `tmpnam'.
+   TMP_MAX	The minimum number of unique filenames generated by tmpnam
+		(and tempnam when it uses tmpnam's name space),
+		or tempnam (the two are separate).
+   L_ctermid	How long an array to pass to `ctermid'.
+   L_cuserid	How long an array to pass to `cuserid'.
+   FOPEN_MAX	Minimum number of files that can be open at once.
+   FILENAME_MAX	Maximum length of a filename.  */
+
+#1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
+/* Copyright (C) 1994-2014 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+#165 "/usr/include/stdio.h" 2 3 4
+
+
+/* Standard streams.  */
+extern struct _IO_FILE *stdin; /* Standard input stream.  */
+extern struct _IO_FILE *stdout; /* Standard output stream.  */
+extern struct _IO_FILE *stderr; /* Standard error output stream.  */
+/* C89/C99 say they're macros.  Make them happy.  */
+
+
+
+
+
+/* Remove file FILENAME.  */
+extern int remove (const char *__filename) throw ();
+/* Rename file OLD to NEW.  */
+extern int rename (const char *__old, const char *__new) throw ();
+
+
+
+/* Rename file OLD relative to OLDFD to NEW relative to NEWFD.  */
+extern int renameat (int __oldfd, const char *__old, int __newfd,
+       const char *__new) throw ();
+
+
+
+/* Create a temporary file and open it read/write.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+
+extern FILE *tmpfile (void) /* Ignore */;
+#205 "/usr/include/stdio.h" 3 4
+extern FILE *tmpfile64 (void) /* Ignore */;
+
+
+/* Generate a temporary filename.  */
+extern char *tmpnam (char *__s) throw () /* Ignore */;
+
+
+
+/* This is the reentrant variant of `tmpnam'.  The only difference is
+   that it does not allow S to be NULL.  */
+extern char *tmpnam_r (char *__s) throw () /* Ignore */;
+
+
+
+
+/* Generate a unique temporary filename using up to five characters of PFX
+   if it is not NULL.  The directory to put this file in is searched for
+   as follows: First the environment variable "TMPDIR" is checked.
+   If it contains the name of a writable directory, that directory is used.
+   If not and if DIR is not NULL, that value is checked.  If that fails,
+   P_tmpdir is tried and finally "/tmp".  The storage for the filename
+   is allocated by `malloc'.  */
+extern char *tempnam (const char *__dir, const char *__pfx)
+     throw () __attribute__ ((__malloc__)) /* Ignore */;
+
+
+
+
+/* Close STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int fclose (FILE *__stream);
+/* Flush STREAM, or all streams if STREAM is NULL.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int fflush (FILE *__stream);
+
+
+
+/* Faster versions when locking is not required.
+
+   This function is not part of POSIX and therefore no official
+   cancellation point.  But due to similarity with an POSIX interface
+   or due to the implementation it is a cancellation point and
+   therefore not marked with __THROW.  */
+extern int fflush_unlocked (FILE *__stream);
+
+
+
+/* Close all streams.
+
+   This function is not part of POSIX and therefore no official
+   cancellation point.  But due to similarity with an POSIX interface
+   or due to the implementation it is a cancellation point and
+   therefore not marked with __THROW.  */
+extern int fcloseall (void);
+
+
+
+
+
+/* Open a file and create a new stream for it.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern FILE *fopen (const char *__restrict __filename,
+      const char *__restrict __modes) /* Ignore */;
+/* Open a file, replacing an existing stream with it.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern FILE *freopen (const char *__restrict __filename,
+        const char *__restrict __modes,
+        FILE *__restrict __stream) /* Ignore */;
+#297 "/usr/include/stdio.h" 3 4
+extern FILE *fopen64 (const char *__restrict __filename,
+        const char *__restrict __modes) /* Ignore */;
+extern FILE *freopen64 (const char *__restrict __filename,
+   const char *__restrict __modes,
+   FILE *__restrict __stream) /* Ignore */;
+
+
+
+/* Create a new stream that refers to an existing system file descriptor.  */
+extern FILE *fdopen (int __fd, const char *__modes) throw () /* Ignore */;
+
+
+
+/* Create a new stream that refers to the given magic cookie,
+   and uses the given functions for input and output.  */
+extern FILE *fopencookie (void *__restrict __magic_cookie,
+     const char *__restrict __modes,
+     _IO_cookie_io_functions_t __io_funcs) throw () /* Ignore */;
+
+
+
+/* Create a new stream that refers to a memory buffer.  */
+extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
+  throw () /* Ignore */;
+
+/* Open a stream that writes into a malloc'd buffer that is expanded as
+   necessary.  *BUFLOC and *SIZELOC are updated with the buffer's location
+   and the number of characters written on fflush or fclose.  */
+extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) throw () /* Ignore */;
+
+
+
+
+/* If BUF is NULL, make STREAM unbuffered.
+   Else make it use buffer BUF, of size BUFSIZ.  */
+extern void setbuf (FILE *__restrict __stream, char *__restrict __buf) throw ();
+/* Make STREAM use buffering mode MODE.
+   If BUF is not NULL, use N bytes of it for buffering;
+   else allocate an internal buffer N bytes long.  */
+extern int setvbuf (FILE *__restrict __stream, char *__restrict __buf,
+      int __modes, size_t __n) throw ();
+
+
+
+/* If BUF is NULL, make STREAM unbuffered.
+   Else make it use SIZE bytes of BUF for buffering.  */
+extern void setbuffer (FILE *__restrict __stream, char *__restrict __buf,
+         size_t __size) throw ();
+
+/* Make STREAM line-buffered.  */
+extern void setlinebuf (FILE *__stream) throw ();
+
+
+
+
+/* Write formatted output to STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int fprintf (FILE *__restrict __stream,
+      const char *__restrict __format, ...);
+/* Write formatted output to stdout.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int printf (const char *__restrict __format, ...);
+/* Write formatted output to S.  */
+extern int sprintf (char *__restrict __s,
+      const char *__restrict __format, ...) throw ();
+
+/* Write formatted output to S from argument list ARG.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int vfprintf (FILE *__restrict __s, const char *__restrict __format,
+       __gnuc_va_list __arg);
+/* Write formatted output to stdout from argument list ARG.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int vprintf (const char *__restrict __format, __gnuc_va_list __arg);
+/* Write formatted output to S from argument list ARG.  */
+extern int vsprintf (char *__restrict __s, const char *__restrict __format,
+       __gnuc_va_list __arg) throw ();
+
+
+
+
+/* Maximum chars of output to write in MAXLEN.  */
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+       const char *__restrict __format, ...)
+     throw () __attribute__ ((__format__ (__printf__, 3, 4)));
+
+extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+        const char *__restrict __format, __gnuc_va_list __arg)
+     throw () __attribute__ ((__format__ (__printf__, 3, 0)));
+
+
+
+
+/* Write formatted output to a string dynamically allocated with `malloc'.
+   Store the address of the string in *PTR.  */
+extern int vasprintf (char **__restrict __ptr, const char *__restrict __f,
+        __gnuc_va_list __arg)
+     throw () __attribute__ ((__format__ (__printf__, 2, 0))) /* Ignore */;
+extern int __asprintf (char **__restrict __ptr,
+         const char *__restrict __fmt, ...)
+     throw () __attribute__ ((__format__ (__printf__, 2, 3))) /* Ignore */;
+extern int asprintf (char **__restrict __ptr,
+       const char *__restrict __fmt, ...)
+     throw () __attribute__ ((__format__ (__printf__, 2, 3))) /* Ignore */;
+
+
+
+/* Write formatted output to a file descriptor.  */
+extern int vdprintf (int __fd, const char *__restrict __fmt,
+       __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__printf__, 2, 0)));
+extern int dprintf (int __fd, const char *__restrict __fmt, ...)
+     __attribute__ ((__format__ (__printf__, 2, 3)));
+
+
+
+
+/* Read formatted input from STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int fscanf (FILE *__restrict __stream,
+     const char *__restrict __format, ...) /* Ignore */;
+/* Read formatted input from stdin.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int scanf (const char *__restrict __format, ...) /* Ignore */;
+/* Read formatted input from S.  */
+extern int sscanf (const char *__restrict __s,
+     const char *__restrict __format, ...) throw ();
+#467 "/usr/include/stdio.h" 3 4
+/* Read formatted input from S into argument list ARG.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int vfscanf (FILE *__restrict __s, const char *__restrict __format,
+      __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__scanf__, 2, 0))) /* Ignore */;
+
+/* Read formatted input from stdin into argument list ARG.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__scanf__, 1, 0))) /* Ignore */;
+
+/* Read formatted input from S into argument list ARG.  */
+extern int vsscanf (const char *__restrict __s,
+      const char *__restrict __format, __gnuc_va_list __arg)
+     throw () __attribute__ ((__format__ (__scanf__, 2, 0)));
+#527 "/usr/include/stdio.h" 3 4
+/* Read a character from STREAM.
+
+   These functions are possible cancellation points and therefore not
+   marked with __THROW.  */
+extern int fgetc (FILE *__stream);
+extern int getc (FILE *__stream);
+
+/* Read a character from stdin.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int getchar (void);
+
+
+/* The C standard explicitly says this is a macro, so we always do the
+   optimization for it.  */
+
+
+
+/* These are defined in POSIX.1:1996.
+
+   These functions are possible cancellation points and therefore not
+   marked with __THROW.  */
+extern int getc_unlocked (FILE *__stream);
+extern int getchar_unlocked (void);
+
+
+
+/* Faster version when locking is not necessary.
+
+   This function is not part of POSIX and therefore no official
+   cancellation point.  But due to similarity with an POSIX interface
+   or due to the implementation it is a cancellation point and
+   therefore not marked with __THROW.  */
+extern int fgetc_unlocked (FILE *__stream);
+
+
+
+
+/* Write a character to STREAM.
+
+   These functions are possible cancellation points and therefore not
+   marked with __THROW.
+
+   These functions is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int fputc (int __c, FILE *__stream);
+extern int putc (int __c, FILE *__stream);
+
+/* Write a character to stdout.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int putchar (int __c);
+
+
+/* The C standard explicitly says this can be a macro,
+   so we always do the optimization for it.  */
+
+
+
+/* Faster version when locking is not necessary.
+
+   This function is not part of POSIX and therefore no official
+   cancellation point.  But due to similarity with an POSIX interface
+   or due to the implementation it is a cancellation point and
+   therefore not marked with __THROW.  */
+extern int fputc_unlocked (int __c, FILE *__stream);
+
+
+
+/* These are defined in POSIX.1:1996.
+
+   These functions are possible cancellation points and therefore not
+   marked with __THROW.  */
+extern int putc_unlocked (int __c, FILE *__stream);
+extern int putchar_unlocked (int __c);
+
+
+
+
+
+/* Get a word (int) from STREAM.  */
+extern int getw (FILE *__stream);
+
+/* Write a word (int) to STREAM.  */
+extern int putw (int __w, FILE *__stream);
+
+
+
+
+/* Get a newline-terminated string of finite length from STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
+     /* Ignore */;
+
+
+
+/* Get a newline-terminated string from stdin, removing the newline.
+   DO NOT USE THIS FUNCTION!!  There is no limit on how much it will read.
+
+   The function has been officially removed in ISO C11.  This opportunity
+   is used to also remove it from the GNU feature list.  It is now only
+   available when explicitly using an old ISO C, Unix, or POSIX standard.
+   GCC defines _GNU_SOURCE when building C++ code and the function is still
+   in C++11, so it is also available for C++.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern char *gets (char *__s) /* Ignore */ __attribute__ ((__deprecated__));
+
+
+
+
+/* This function does the same as `fgets' but does not lock the stream.
+
+   This function is not part of POSIX and therefore no official
+   cancellation point.  But due to similarity with an POSIX interface
+   or due to the implementation it is a cancellation point and
+   therefore not marked with __THROW.  */
+extern char *fgets_unlocked (char *__restrict __s, int __n,
+        FILE *__restrict __stream) /* Ignore */;
+
+
+
+
+/* Read up to (and including) a DELIMITER from STREAM into *LINEPTR
+   (and null-terminate it). *LINEPTR is a pointer returned from malloc (or
+   NULL), pointing to *N characters of space.  It is realloc'd as
+   necessary.  Returns the number of characters read (not including the
+   null terminator), or -1 on error or EOF.
+
+   These functions are not part of POSIX and therefore no official
+   cancellation point.  But due to similarity with an POSIX interface
+   or due to the implementation they are cancellation points and
+   therefore not marked with __THROW.  */
+extern __ssize_t __getdelim (char **__restrict __lineptr,
+          size_t *__restrict __n, int __delimiter,
+          FILE *__restrict __stream) /* Ignore */;
+extern __ssize_t getdelim (char **__restrict __lineptr,
+        size_t *__restrict __n, int __delimiter,
+        FILE *__restrict __stream) /* Ignore */;
+
+/* Like `getdelim', but reads up to a newline.
+
+   This function is not part of POSIX and therefore no official
+   cancellation point.  But due to similarity with an POSIX interface
+   or due to the implementation it is a cancellation point and
+   therefore not marked with __THROW.  */
+extern __ssize_t getline (char **__restrict __lineptr,
+       size_t *__restrict __n,
+       FILE *__restrict __stream) /* Ignore */;
+
+
+
+
+/* Write a string to STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int fputs (const char *__restrict __s, FILE *__restrict __stream);
+
+/* Write a string, followed by a newline, to stdout.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int puts (const char *__s);
+
+
+/* Push a character back onto the input buffer of STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int ungetc (int __c, FILE *__stream);
+
+
+/* Read chunks of generic data from STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern size_t fread (void *__restrict __ptr, size_t __size,
+       size_t __n, FILE *__restrict __stream) /* Ignore */;
+/* Write chunks of generic data to STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+        size_t __n, FILE *__restrict __s);
+
+
+
+/* This function does the same as `fputs' but does not lock the stream.
+
+   This function is not part of POSIX and therefore no official
+   cancellation point.  But due to similarity with an POSIX interface
+   or due to the implementation it is a cancellation point and
+   therefore not marked with __THROW.  */
+extern int fputs_unlocked (const char *__restrict __s,
+      FILE *__restrict __stream);
+
+
+
+/* Faster versions when locking is not necessary.
+
+   These functions are not part of POSIX and therefore no official
+   cancellation point.  But due to similarity with an POSIX interface
+   or due to the implementation they are cancellation points and
+   therefore not marked with __THROW.  */
+extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+         size_t __n, FILE *__restrict __stream) /* Ignore */;
+extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+          size_t __n, FILE *__restrict __stream);
+
+
+
+
+/* Seek to a certain position on STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int fseek (FILE *__stream, long int __off, int __whence);
+/* Return the current position of STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern long int ftell (FILE *__stream) /* Ignore */;
+/* Rewind to the beginning of STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern void rewind (FILE *__stream);
+
+
+/* The Single Unix Specification, Version 2, specifies an alternative,
+   more adequate interface for the two functions above which deal with
+   file offset.  `long int' is not the right type.  These definitions
+   are originally defined in the Large File Support API.  */
+
+
+
+/* Seek to a certain position on STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int fseeko (FILE *__stream, __off_t __off, int __whence);
+/* Return the current position of STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern __off_t ftello (FILE *__stream) /* Ignore */;
+#794 "/usr/include/stdio.h" 3 4
+/* Get STREAM's position.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int fgetpos (FILE *__restrict __stream, fpos_t *__restrict __pos);
+/* Set STREAM's position.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int fsetpos (FILE *__stream, const fpos_t *__pos);
+#818 "/usr/include/stdio.h" 3 4
+extern int fseeko64 (FILE *__stream, __off64_t __off, int __whence);
+extern __off64_t ftello64 (FILE *__stream) /* Ignore */;
+extern int fgetpos64 (FILE *__restrict __stream, fpos64_t *__restrict __pos);
+extern int fsetpos64 (FILE *__stream, const fpos64_t *__pos);
+
+
+
+/* Clear the error and EOF indicators for STREAM.  */
+extern void clearerr (FILE *__stream) throw ();
+/* Return the EOF indicator for STREAM.  */
+extern int feof (FILE *__stream) throw () /* Ignore */;
+/* Return the error indicator for STREAM.  */
+extern int ferror (FILE *__stream) throw () /* Ignore */;
+
+
+
+/* Faster versions when locking is not required.  */
+extern void clearerr_unlocked (FILE *__stream) throw ();
+extern int feof_unlocked (FILE *__stream) throw () /* Ignore */;
+extern int ferror_unlocked (FILE *__stream) throw () /* Ignore */;
+
+
+
+
+/* Print a message describing the meaning of the value of errno.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern void perror (const char *__s);
+
+
+/* Provide the declarations for `sys_errlist' and `sys_nerr' if they
+   are available on this system.  Even if available, these variables
+   should not be used directly.  The `strerror' function provides
+   all the necessary functionality.  */
+
+#1 "/usr/include/x86_64-linux-gnu/bits/sys_errlist.h" 1 3 4
+/* Declare sys_errlist and sys_nerr, or don't.  Compatibility (do) version.
+   Copyright (C) 2002-2014 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+
+
+
+
+
+/* sys_errlist and sys_nerr are deprecated.  Use strerror instead.  */
+
+
+extern int sys_nerr;
+extern const char *const sys_errlist[];
+
+
+extern int _sys_nerr;
+extern const char *const _sys_errlist[];
+#854 "/usr/include/stdio.h" 2 3 4
+
+
+
+/* Return the system file descriptor for STREAM.  */
+extern int fileno (FILE *__stream) throw () /* Ignore */;
+
+
+
+/* Faster version when locking is not required.  */
+extern int fileno_unlocked (FILE *__stream) throw () /* Ignore */;
+
+
+
+
+
+/* Create a new stream connected to a pipe running the given command.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern FILE *popen (const char *__command, const char *__modes) /* Ignore */;
+
+/* Close a stream opened by popen and return the status of its child.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */
+extern int pclose (FILE *__stream);
+
+
+
+
+/* Return the name of the controlling terminal.  */
+extern char *ctermid (char *__s) throw ();
+
+
+
+
+/* Return the name of the current user.  */
+extern char *cuserid (char *__s);
+
+
+
+
+struct obstack; /* See <obstack.h>.  */
+
+/* Write formatted output to an obstack.  */
+extern int obstack_printf (struct obstack *__restrict __obstack,
+      const char *__restrict __format, ...)
+     throw () __attribute__ ((__format__ (__printf__, 2, 3)));
+extern int obstack_vprintf (struct obstack *__restrict __obstack,
+       const char *__restrict __format,
+       __gnuc_va_list __args)
+     throw () __attribute__ ((__format__ (__printf__, 2, 0)));
+
+
+
+
+/* These are defined in POSIX.1:1996.  */
+
+/* Acquire ownership of STREAM.  */
+extern void flockfile (FILE *__stream) throw ();
+
+/* Try to acquire ownership of STREAM but do not block if it is not
+   possible.  */
+extern int ftrylockfile (FILE *__stream) throw () /* Ignore */;
+
+/* Relinquish the ownership granted for STREAM.  */
+extern void funlockfile (FILE *__stream) throw ();
+#931 "/usr/include/stdio.h" 3 4
+/* If we are compiling with optimizing read this file.  It contains
+   several optimizing inline functions and macros.  */
+#943 "/usr/include/stdio.h" 3 4
+}
+#5 "memory_scanner/source/memory_scanner.cpp" 2
+
+
 
 typedef ap_uint<32> uint32_t_hw;
 typedef hls::stream<uint32_t_hw> mem_stream32;
@@ -38254,14 +39389,18 @@ ap_uint<32> reverse32(ap_uint<32> in){
  int j;
  ap_uint<8> temp2;
  ap_uint<8> temp2_array[4];
- for(j=0; j<4; j++){_ssdm_RegionBegin("hls_label_0");
-_ssdm_Unroll(0,0,0, "");
- temp2 = in.range(j*8+7, j*8);
-//		temp2 = temp.range(31-j*8, 24-j*8);
-//		printf("\n%s", temp2.to_string(16).c_str());
-//		out = out.concat(temp2);
-  temp2_array[j] = temp2;
- _ssdm_RegionEnd("hls_label_0");}
+//	for(j=0; j<4; j++){
+//#pragma HLS UNROLL
+//		temp2 = in.range(j*8+7, j*8);
+////		temp2 = temp.range(31-j*8, 24-j*8);
+////		printf("\n%s", temp2.to_string(16).c_str());
+////		out = out.concat(temp2);
+//		temp2_array[j] = temp2;
+//	}
+ temp2_array[0] = in.range(7, 0);
+ temp2_array[1] = in.range(15, 8);
+ temp2_array[2] = in.range(23, 16);
+ temp2_array[3] = in.range(31, 24);
  return (temp2_array[0], temp2_array[1], temp2_array[2], temp2_array[3]);
 }
 
@@ -38272,50 +39411,13 @@ void unpack_word(ap_uint<32> data_in, unsigned char data_out[4]){_ssdm_SpecArray
  }
 }
 
+//bool memory_scanner(volatile unsigned int m_mm2s_ctl [500], volatile unsigned int m_s2mm_ctl[500],
+//		 mem_stream32& s_in, mem_stream32& s_out,
+//		 unsigned char search_string[17], int *count_out){
+bool memory_scanner(volatile unsigned char ddr[0x40000000],
+   unsigned char search_string[17], int *count_out){_ssdm_SpecArrayDimSize(ddr,0x40000000);_ssdm_SpecArrayDimSize(search_string,17);
+_ssdm_op_SpecWire(ddr, "m_axi", 0, 0, 0, 0, "", "", "");
 
-class aesl_keep_name_class {
-public:
-template< typename __STREAM_T__ >
-class aesl_keep_name_class_stream_s_in{ 
-public: 
-inline __attribute__((always_inline)) static void aesl_keep_name_stream_s_in(hls::stream< ap_uint< 32 > >& s_in) {aesl_keep_name_class_ap_int_base_ap_uint_s_in_V< 32 >::aesl_keep_name_ap_int_base_s_in_V(&s_in.V);}
-
-};
-template< int _AP_W >
-class aesl_keep_name_class_ap_int_base_ap_uint_s_in_V{ 
-public: 
-inline __attribute__((always_inline)) static void aesl_keep_name_ap_int_base_s_in_V(ap_int_base< _AP_W, false >* s_in_V) {aesl_keep_name_class_ssdm_int_ap_int_base_s_in_V< _AP_W, false >::aesl_keep_name_ssdm_int_s_in_V(s_in_V);}
-
-};
-template< int _AP_W, bool _AP_S >
-class aesl_keep_name_class_ssdm_int_ap_int_base_s_in_V{ 
-public: 
-inline __attribute__((always_inline)) static void aesl_keep_name_ssdm_int_s_in_V(ssdm_int< _AP_W, _AP_S >* s_in_V) {SSDM_KEEP_name(s_in.V.V, &s_in_V->V); }
-
-};
-template< typename __STREAM_T__ >
-class aesl_keep_name_class_stream_s_out{ 
-public: 
-inline __attribute__((always_inline)) static void aesl_keep_name_stream_s_out(hls::stream< ap_uint< 32 > >& s_out) {aesl_keep_name_class_ap_int_base_ap_uint_s_out_V< 32 >::aesl_keep_name_ap_int_base_s_out_V(&s_out.V);}
-
-};
-template< int _AP_W >
-class aesl_keep_name_class_ap_int_base_ap_uint_s_out_V{ 
-public: 
-inline __attribute__((always_inline)) static void aesl_keep_name_ap_int_base_s_out_V(ap_int_base< _AP_W, false >* s_out_V) {aesl_keep_name_class_ssdm_int_ap_int_base_s_out_V< _AP_W, false >::aesl_keep_name_ssdm_int_s_out_V(s_out_V);}
-
-};
-template< int _AP_W, bool _AP_S >
-class aesl_keep_name_class_ssdm_int_ap_int_base_s_out_V{ 
-public: 
-inline __attribute__((always_inline)) static void aesl_keep_name_ssdm_int_s_out_V(ssdm_int< _AP_W, _AP_S >* s_out_V) {SSDM_KEEP_name(s_out.V.V, &s_out_V->V); }
-
-};
-};
-#30 "memory_scanner/.apc/src/memory_scanner.cpp"
-bool memory_scanner(volatile unsigned int m_mm2s_ctl [500], volatile unsigned int m_s2mm_ctl[500],
-   mem_stream32& s_in, mem_stream32& s_out,
-   unsigned char search_string[17], int *count_out){_ssdm_SpecArrayDimSize(search_string,17);_ssdm_SpecArrayDimSize(m_s2mm_ctl,500);_ssdm_SpecArrayDimSize(m_mm2s_ctl,500);::aesl_keep_name_class::aesl_keep_name_class_stream_s_out< ap_uint< 32 > >::aesl_keep_name_stream_s_out(s_out);::aesl_keep_name_class::aesl_keep_name_class_stream_s_in< ap_uint< 32 > >::aesl_keep_name_stream_s_in(s_in);
 _ssdm_op_SpecWire(0, "s_axilite", 0, 0, 0, 0, "", "", "");
 
 _ssdm_SpecArrayPartition( search_string, 1, "COMPLETE", 0, "");
@@ -38338,93 +39440,168 @@ _ssdm_op_SpecWire(0, "ap_ctrl_hs", 0, 0, 0, 0, "", "", "");
 
 
 
-_ssdm_op_SpecWire(&s_out, "axis", 0, 0, 0, 1000, "", "", "");
+//#pragma HLS INTERFACE axis depth=1000 port=s_out
+//
+//#pragma HLS INTERFACE axis depth=1000 port=s_in
+//
+//#pragma HLS INTERFACE m_axi port=m_s2mm_ctl
+//
+//#pragma HLS INTERFACE m_axi port=m_mm2s_ctl
+//	int i, j, k, search_index = 0, count = 0, bytes_checked = 0;
+//
+//	//512 MiB in hex = 0x40000000 bytes
+//	unsigned read_length = 0x40000000;
+//
+//#ifndef __SYNTHESIS__
+//	//only read 48 bytes when simulating
+//	read_length = 0x80;
+//#endif
+//
+//	unsigned sourceAddress = 0;
+//	unsigned destinationAddress = 0;
+//	ap_uint<32> data;
+//	ap_uint<32> temp;
+////	unsigned char data_word[0x10][4];
+//	unsigned char data_word[4];
+//
+//
+//	m_mm2s_ctl[0] &= 0;
+////	m_s2mm_ctl[12] &= 0;
+//
+//	m_mm2s_ctl[0] |= 4;
+////	m_s2mm_ctl[12] |= 4;
+//
+//	m_mm2s_ctl[0] &= 0;
+////	m_s2mm_ctl[12] &= 0;
+//
+//	//--------Program read DMA mm2s----------
+//	//enable read dma block
+//	m_mm2s_ctl[0] |= 1;
+//	//enable read interupts
+//	m_mm2s_ctl[0] |= 4096;
+//	//write source address
+//	m_mm2s_ctl[6] = sourceAddress;
+//	//calculate # of bytes that will be read from s_in in total
+//	//read_length = #encryptions X #bytes/encryption
+////	if(mode==2){
+////		read_length = numBytes;
+////	} else{
+////		read_length = numIterations*16;//length*sizeof(ap_uint<128>);
+////	}
+//	m_mm2s_ctl[10] = read_length;
+//
+//	//--------Program write DMA s2mm--------
+//	//enable s2mm on write dma block
+////	m_s2mm_ctl[12] |= 1;
+////	//enable write interrupts
+////	m_s2mm_ctl[12] |= 4096;
+////	//write dest address
+////	m_s2mm_ctl[18] = destinationAddress;
+////	//write write length as the same as read length
+//////	m_s2mm_ctl[22] = read_length;
+////	m_s2mm_ctl[22] = 0;
+//
+//	//loop through address space from 0 to 0x40000000, read 4 bytes at a time
+//	//need to store the current index in the search string and reset on failure
+//	//or finishing of the string
+//	//also reverse each word read using the above reverse function
+////	printf("Iterations: %i\n", (read_length/4));
+//	int words_to_read = read_length/4;
+////	int iterations = words_to_read/0x10;
+//	int iterations = words_to_read;
+ unsigned int read_length = 0x40000000;
 
-_ssdm_op_SpecWire(&s_in, "axis", 0, 0, 0, 1000, "", "", "");
-
-_ssdm_op_SpecWire(m_s2mm_ctl, "m_axi", 0, 0, 0, 0, "", "", "");
-
-_ssdm_op_SpecWire(m_mm2s_ctl, "m_axi", 0, 0, 0, 0, "", "", "");
- int i, j, search_index = 0, count = 0;
-
- //512 MiB in hex = 0x40000000 bytes
- unsigned read_length = 0x40000000;
 
 
 
+ unsigned int iterations = read_length/0x1;
+ int search_index[0x1];
+ int count[0x1];
+ if(iterations == 0){
+  iterations = 1;
+ }
+ int i, j, bytes_checked = 0, total = 0;
+ for(i=0; i<0x1; i++){_ssdm_RegionBegin("hls_label_0");
+_ssdm_Unroll(0,0,0, "");
+ search_index[i] = 0;
+  count[i] = 0;
+ _ssdm_RegionEnd("hls_label_0");}
+ printf("Iterations: %i\n", iterations);
+ for(i=0; i<0x1; i++){_ssdm_RegionBegin("hls_label_1");
+_ssdm_Unroll(0,0,0, "");
 
-
-
- unsigned sourceAddress = 0;
- unsigned destinationAddress = 0;
- ap_uint<32> temp, data;
- unsigned char data_word[4];
-
-
- m_mm2s_ctl[0] &= 0;
-//	m_s2mm_ctl[12] &= 0;
-
- m_mm2s_ctl[0] |= 4;
-//	m_s2mm_ctl[12] |= 4;
-
- m_mm2s_ctl[0] &= 0;
-//	m_s2mm_ctl[12] &= 0;
-
- //--------Program read DMA mm2s----------
- //enable read dma block
- m_mm2s_ctl[0] |= 1;
- //enable read interupts
- m_mm2s_ctl[0] |= 4096;
- //write source address
- m_mm2s_ctl[6] = sourceAddress;
- //calculate # of bytes that will be read from s_in in total
- //read_length = #encryptions X #bytes/encryption
-//	if(mode==2){
-//		read_length = numBytes;
-//	} else{
-//		read_length = numIterations*16;//length*sizeof(ap_uint<128>);
-//	}
- m_mm2s_ctl[10] = read_length;
-
- //--------Program write DMA s2mm--------
- //enable s2mm on write dma block
-//	m_s2mm_ctl[12] |= 1;
-//	//enable write interrupts
-//	m_s2mm_ctl[12] |= 4096;
-//	//write dest address
-//	m_s2mm_ctl[18] = destinationAddress;
-//	//write write length as the same as read length
-////	m_s2mm_ctl[22] = read_length;
-//	m_s2mm_ctl[22] = 0;
-
- //loop through address space from 0 to 0x40000000, read 4 bytes at a time
- //need to store the current index in the search string and reset on failure
- //or finishing of the string
- //also reverse each word read using the above reverse function
- for(i = 0; i < read_length/4; i++){
-  temp = s_in.read();
-  data = reverse32(temp);
-  unpack_word(data, data_word);
-  for(j=0; j<4; j++){
-   //increment the search index if we match, else reset to 0
-   if(data_word[j] == search_string[search_index]){
-    search_index++;
+ for(j=0; j<iterations; j++){
+//			if(bytes_checked > read_length){
+//				break;
+//			}
+   if(ddr[iterations*i+j] == search_string[search_index[i]]){
+    search_index[i]++;
    } else{
-    search_index = 0;
+    search_index[i]=0;
    }
+   if(search_index[i] >= 16){
+    count[i] ++;
+    search_index[i] = 0;
+   }
+//			bytes_checked++;
   }
-  //if we are >= 17 then we have finished on search - reset index and increment count
-  if(search_index >= 17){
-   count ++;
-   search_index = 0;
-  }
- }
+ _ssdm_RegionEnd("hls_label_1");}
+//	for(i = 0; i < iterations; i++){
+////		for(j=0; j<0x10; j++){
+//			temp = s_in.read();
+//			data = reverse32(temp);
+////			unpack_word(data, data_word[j]);
+//			unpack_word(data, data_word);
+////			printf("Read data %i: %s\n", i, data.to_string(16).c_str());
+////		}
+//
+////		printf("Data word: 0x");
+////		for(j=0; j<0x10; j++){
+//		for(j=0; j<4; j++){
+//			//increment the search index if we match, else reset to 0
+////			printf("%02x", data_word[j]);
+////			for(k = 0; k<4; k++){
+//				if(bytes_checked > read_length){
+//					break;
+//				}
+////				if(data_word[j][k] == search_string[search_index]){
+//				if(data_word[j] == search_string[search_index]){
+//					search_index++;
+//				} else{
+//					search_index = 0;
+//				}
+//				if(search_index >= 16){
+//					count ++;
+//					search_index = 0;
+//				}
+//				bytes_checked++;
+////			}
+//		}
+//
+////		for(j=0; j<0x10; j++){
+////#pragma HLS UNROLL
+////
+////			for(k=0; k<4; k++){
+////#pragma HLS UNROLL
+////
+////				data_word[j][k] = 0;
+////			}
+////		}
+////		printf("\n");
+//		//if we are >= 17 then we have finished on search - reset index and increment count
+//
+//	}
+//
+ for(i=0; i<0x1; i++){_ssdm_RegionBegin("hls_label_2");
+_ssdm_Unroll(0,0,0, "");
 
- *count_out = count;
-
- //hack to make the output stream synthesis, even though we don't use it
- if(s_out.full()){
-  s_out.write(ap_uint<32>(0));
- }
+ total += count[i];
+ _ssdm_RegionEnd("hls_label_2");}
+ *count_out = total;
+//
+//	//hack to make the output stream synthesis, even though we don't use it
+//	if(s_out.full()){
+//		s_out.write(ap_uint<32>(0));
+//	}
  return true;
  }

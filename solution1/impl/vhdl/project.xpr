@@ -6,7 +6,7 @@
 <Project Version="7" Minor="0" Path="/Xilinx/memory_scanner/solution1/impl/vhdl/project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="8aa18f60b6544535b7804487faddd80c"/>
+    <Option Name="Id" Val="8e499ff527884336b052a7bbb2ee9b93"/>
     <Option Name="Part" Val="xc7z020clg484-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="TargetLanguage" Val="VHDL"/>
@@ -23,19 +23,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/memory_scanner_m_mm2s_ctl_m_axi.vhd">
+      <File Path="$PPRDIR/memory_scanner_ddr_m_axi.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PPRDIR/memory_scanner.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/memory_scanner_m_s2mm_ctl_m_axi.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

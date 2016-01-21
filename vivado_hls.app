@@ -1,12 +1,13 @@
-<project xmlns="com.autoesl.autopilot.project" top="memory_scanner" name="memory_scanner">
+<project xmlns="com.autoesl.autopilot.project" name="memory_scanner" top="memory_scanner">
+    <files>
+        <file name="../source/memory_scanner_tb.cpp" sc="0" tb="1" cflags=" "/>
+        <file name="memory_scanner/source/memory_scanner.cpp" sc="0" tb="false" cflags=""/>
+    </files>
     <includePaths/>
     <libraryPaths/>
     <Simulation>
-        <SimFlow name="csim"/>
+        <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
     </Simulation>
-    <files xmlns="">
-        <file name="memory_scanner/.apc/src/memory_scanner.cpp" sc="0" tb="false" cflags=""/>
-    </files>
     <solutions xmlns="">
         <solution name="solution1" status="active"/>
     </solutions>

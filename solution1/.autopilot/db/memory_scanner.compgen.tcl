@@ -155,72 +155,16 @@ eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
     id 2 \
     corename {m_axi} \
     op interface \
-    name {memory_scanner_m_mm2s_ctl_m_axi} \
+    name {memory_scanner_ddr_m_axi} \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find AXI interface model in the library. Ignored generation of AXI interface for 'm_mm2s_ctl'"
+puts "@W \[IMPL-110\] Cannot find AXI interface model in the library. Ignored generation of AXI interface for 'ddr'"
 }
 }
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler memory_scanner_m_mm2s_ctl_m_axi
+	::AP::rtl_comp_handler memory_scanner_ddr_m_axi
 }
-
-# Native M_AXI:
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
-eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 3 \
-    corename {m_axi} \
-    op interface \
-    name {memory_scanner_m_s2mm_ctl_m_axi} \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find AXI interface model in the library. Ignored generation of AXI interface for 'm_s2mm_ctl'"
-}
-}
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler memory_scanner_m_s2mm_ctl_m_axi
-}
-
-# Native AXIS:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
-eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 4 \
-    name s_in_V_V \
-    reset_level 0 \
-    sync_rst true \
-    corename {} \
-    metadata {  } \
-    op interface \
-    ports { s_in_V_V_TDATA { I 32 vector } s_in_V_V_TVALID { I 1 bit } s_in_V_V_TREADY { O 1 bit } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 's_in_V_V'"
-}
-}
-
-
-# Native AXIS:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
-eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 5 \
-    name s_out_V_V \
-    reset_level 0 \
-    sync_rst true \
-    corename {} \
-    metadata {  } \
-    op interface \
-    ports { s_out_V_V_TDATA { O 32 vector } s_out_V_V_TVALID { O 1 bit } s_out_V_V_TREADY { I 1 bit } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 's_out_V_V'"
-}
-}
-
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {

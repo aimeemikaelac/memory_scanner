@@ -3,7 +3,7 @@
         <DownStreamTool name=""/>
     </downStreamTool>
     <clockList>
-        <clock name="default" period="10"/>
+        <clock default="false" name="default" period="10"/>
     </clockList>
     <config>
         <schedule model="memory_scanner"/>

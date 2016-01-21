@@ -1,5 +1,5 @@
-#pragma line 1 "memory_scanner/.apc/src/memory_scanner.cpp" ::: 0
-#pragma line 1 "memory_scanner/.apc/src/memory_scanner.cpp" 1 ::: 1
+#pragma line 1 "memory_scanner/source/memory_scanner.cpp" ::: 0
+#pragma line 1 "memory_scanner/source/memory_scanner.cpp" 1 ::: 1
 #pragma line 1 "<built-in>" 1 ::: 2
 #pragma line 1 "<built-in>" 3 ::: 3
 #pragma line 155 "<built-in>" 3 ::: 4
@@ -9,7 +9,7 @@
 #pragma line 375 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/etc/autopilot_ssdm_op.h" ::: 158
 #pragma line 8 "<command line>" 2 ::: 161
 #pragma line 1 "<built-in>" 2 ::: 162
-#pragma line 1 "memory_scanner/.apc/src/memory_scanner.cpp" 2 ::: 163
+#pragma line 1 "memory_scanner/source/memory_scanner.cpp" 2 ::: 163
 #pragma line 1 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_int.h" 1 ::: 164
 #pragma line 14 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_int.h" ::: 170
 #pragma line 1 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_int_syn.h" 1 ::: 171
@@ -555,8 +555,51 @@
 #pragma line 2314 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_fixed_syn.h" ::: 37529
 #pragma line 2354 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_fixed_syn.h" ::: 37547
 #pragma line 16 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_int.h" 2 ::: 37554
-#pragma line 2 "memory_scanner/.apc/src/memory_scanner.cpp" 2 ::: 38018
+#pragma line 2 "memory_scanner/source/memory_scanner.cpp" 2 ::: 38018
 #pragma line 1 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/hls_stream.h" 1 ::: 38021
 #pragma line 1 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/etc/autopilot_enum.h" 1 ::: 38042
 #pragma line 21 "/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/hls_stream.h" 2 ::: 38125
-#pragma line 4 "memory_scanner/.apc/src/memory_scanner.cpp" 2 ::: 38220
+#pragma line 4 "memory_scanner/source/memory_scanner.cpp" 2 ::: 38220
+#pragma line 1 "/usr/include/stdio.h" 1 3 4 ::: 38221
+#pragma line 1 "/Xilinx/Vivado_HLS/2014.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4 ::: 38255
+#pragma line 56 "/Xilinx/Vivado_HLS/2014.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4 ::: 38280
+#pragma line 34 "/usr/include/stdio.h" 2 3 4 ::: 38283
+#pragma line 74 "/usr/include/stdio.h" 3 4 ::: 38284
+#pragma line 1 "/usr/include/libio.h" 1 3 4 ::: 38285
+#pragma line 1 "/usr/include/_G_config.h" 1 3 4 ::: 38317
+#pragma line 1 "/Xilinx/Vivado_HLS/2014.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4 ::: 38333
+#pragma line 56 "/Xilinx/Vivado_HLS/2014.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4 ::: 38358
+#pragma line 16 "/usr/include/_G_config.h" 2 3 4 ::: 38361
+#pragma line 1 "/usr/include/wchar.h" 1 3 4 ::: 38366
+#pragma line 897 "/usr/include/wchar.h" 3 4 ::: 38388
+#pragma line 21 "/usr/include/_G_config.h" 2 3 4 ::: 38391
+#pragma line 45 "/usr/include/_G_config.h" 3 4 ::: 38402
+#pragma line 32 "/usr/include/libio.h" 2 3 4 ::: 38412
+#pragma line 47 "/usr/include/libio.h" 3 4 ::: 38414
+#pragma line 86 "/usr/include/libio.h" 3 4 ::: 38416
+#pragma line 124 "/usr/include/libio.h" 3 4 ::: 38422
+#pragma line 144 "/usr/include/libio.h" 3 4 ::: 38424
+#pragma line 177 "/usr/include/libio.h" 3 4 ::: 38448
+#pragma line 245 "/usr/include/libio.h" 3 4 ::: 38459
+#pragma line 293 "/usr/include/libio.h" 3 4 ::: 38500
+#pragma line 302 "/usr/include/libio.h" 3 4 ::: 38502
+#pragma line 334 "/usr/include/libio.h" 3 4 ::: 38524
+#pragma line 434 "/usr/include/libio.h" 3 4 ::: 38584
+#pragma line 464 "/usr/include/libio.h" 3 4 ::: 38599
+#pragma line 526 "/usr/include/libio.h" 3 4 ::: 38611
+#pragma line 75 "/usr/include/stdio.h" 2 3 4 ::: 38613
+#pragma line 107 "/usr/include/stdio.h" 3 4 ::: 38619
+#pragma line 150 "/usr/include/stdio.h" 3 4 ::: 38653
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4 ::: 38669
+#pragma line 165 "/usr/include/stdio.h" 2 3 4 ::: 38686
+#pragma line 205 "/usr/include/stdio.h" 3 4 ::: 38718
+#pragma line 297 "/usr/include/stdio.h" 3 4 ::: 38795
+#pragma line 467 "/usr/include/stdio.h" 3 4 ::: 38934
+#pragma line 527 "/usr/include/stdio.h" 3 4 ::: 38954
+#pragma line 794 "/usr/include/stdio.h" 3 4 ::: 39207
+#pragma line 818 "/usr/include/stdio.h" 3 4 ::: 39218
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/sys_errlist.h" 1 3 4 ::: 39255
+#pragma line 854 "/usr/include/stdio.h" 2 3 4 ::: 39287
+#pragma line 931 "/usr/include/stdio.h" 3 4 ::: 39355
+#pragma line 943 "/usr/include/stdio.h" 3 4 ::: 39358
+#pragma line 5 "memory_scanner/source/memory_scanner.cpp" 2 ::: 39360

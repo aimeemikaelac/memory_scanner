@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="memory_scanner.cpp" path="/Xilinx/memory_scanner/.apc/src/memory_scanner.cpp"/>
+    <originFiles name="memory_scanner.cpp" path="/Xilinx/memory_scanner/source/memory_scanner.cpp"/>
   </source>
-  <testbench/>
+  <testbench>
+    <originFiles name="memory_scanner_tb.cpp" path="/Xilinx/memory_scanner/source/memory_scanner_tb.cpp"/>
+  </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>
